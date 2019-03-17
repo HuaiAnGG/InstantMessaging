@@ -24,3 +24,6 @@ Instant messaging application based on third-party push platform
 
 # Git相关操作
 - [git相关操作](https://github.com/HuaiAnGG/InstantMessaging/blob/master/Doc/Git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C.md)
+
+# 服务器配置
+- [服务器配置]()
