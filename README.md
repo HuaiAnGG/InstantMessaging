@@ -1,6 +1,6 @@
 # InstantMessaging
-Instant messaging application based on third-party push platform
-基于第三方推送的即时通信app
+- [英] Instant messaging application based on third-party push platform
+- [中] 基于第三方推送的即时通信app
 
 # 推送的选择
 - 极光：免费，
@@ -26,4 +26,4 @@ Instant messaging application based on third-party push platform
 - [git相关操作](https://github.com/HuaiAnGG/InstantMessaging/blob/master/Doc/Git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C.md)
 
 # 服务器配置
-- [服务器配置]()
+- [服务器配置](https://github.com/HuaiAnGG/InstantMessaging/blob/master/Doc/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
