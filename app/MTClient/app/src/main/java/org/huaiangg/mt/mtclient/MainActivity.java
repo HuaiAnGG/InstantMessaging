@@ -1,5 +1,6 @@
 package org.huaiangg.mt.mtclient;
 
+import android.util.Log;
 import android.widget.TextView;
 
 import org.huaiangg.mt.common.app.Activity;
@@ -7,8 +8,9 @@ import org.huaiangg.mt.common.app.Activity;
 import butterknife.BindView;
 
 public class MainActivity extends Activity {
+    private static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.txt_test)
-    TextView mtestText;
+    TextView mTestText;
 
     @Override
     protected int getContentLayoutID() {
@@ -18,6 +20,7 @@ public class MainActivity extends Activity {
     @Override
     protected void initData() {
         super.initData();
-        mtestText.setText("Hello World!");
+        Log.d(TAG, "initData: 初始化Activity!");
+        mTestText.setText("Hello0987654");
     }
 }

@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -146,7 +146,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="307" />
     <option name="y" value="53" />
     <option name="width" value="1277" />
@@ -481,8 +481,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="43" width="1021" height="643" extended-state="1" />
-    <editor active="true" />
+    <frame x="246" y="43" width="1021" height="643" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33125648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -497,7 +496,7 @@
       <window_info anchor="bottom" id="Database Console" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.71457905" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.71457905" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.63583815" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
