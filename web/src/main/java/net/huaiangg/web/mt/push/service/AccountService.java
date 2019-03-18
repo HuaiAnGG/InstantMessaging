@@ -1,7 +1,9 @@
 package net.huaiangg.web.mt.push.service;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import net.huaiangg.web.mt.push.bean.User;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 
 /**
  * @Description: 访问路径映射
@@ -13,7 +15,8 @@ public class AccountService {
 
     /**
      * 测试API接口
-     * 地址：localhost:8080/api/account/login
+     * 地址：http://localhost:8080/Gradle___MTServer___MTServer_1_0_SNAPSHOT_war/api/account/login
+     * 方式：GET
      * @return
      */
     @GET
@@ -21,5 +24,25 @@ public class AccountService {
     public String get(){
         System.out.println("已经进入get函数");
         return "You get the login.";
+    }
+
+    /**
+     * 测试API接口
+     * 地址：http://localhost:8080/Gradle___MTServer___MTServer_1_0_SNAPSHOT_war/api/account/getUser
+     * 方式：POST
+     * @Consumes 指定请求的相应体格式
+     * @Produces 返回相应体的格式
+     * @return
+     */
+    @POST
+    @Path("login")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getUser(){
+        System.out.println("已经进入getUser函数");
+        User user = new User();
+        user.setName("HuaiAnGG");
+        user.setSex("男");
+        return user;
     }
 }
