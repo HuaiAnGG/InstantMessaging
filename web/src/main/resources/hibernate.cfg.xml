@@ -8,7 +8,7 @@
         <!-- 数据库链接驱动 -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <!--链接地址用户名密码 -->
-        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/DB_I_T_PUSH?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/schemas?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
         <property name="connection.username">root</property>
         <property name="connection.password">123456</property>
 
@@ -40,7 +40,7 @@
         <!-- 连接对象因该多长时间被自动校验的时间段，以秒为单位-->
         <property name="c3p0.idle_test_period">100</property> <!-- seconds -->
         <!--最多可以创建Statements对象的个数. . 就是可以执行SQL语句的对象的个数-->
-        <property name="c3p0.max_statements">0</property>
+        <property name="c3p0.max_statements">1</property>
 
         <!-- SQL语句输出 -->
         <property name="show_sql">true</property>
