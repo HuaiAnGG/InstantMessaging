@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--toolbar标题颜色-->
     <attr name="toolbarTitleColor" format="color" />
+    <!--toolbar菜单图标颜色-->
     <attr name="toolbarMenuIconColor" format="color" />
+    <!--toolbar标题颜色-->
     <attr name="toolbarTitleSize" format="dimension" />
 </resources>
