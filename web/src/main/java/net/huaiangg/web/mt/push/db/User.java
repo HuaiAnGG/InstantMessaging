@@ -7,8 +7,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -84,7 +84,14 @@ public class User {
      */
     @UpdateTimestamp
     @Column(nullable = false)
-    private LocalDate createAt = LocalDate.now();
+    private LocalDateTime createAt = LocalDateTime.now();
+
+    /**
+     * 定义为更新时间戳，在创建时就已经写入
+     */
+    @UpdateTimestamp
+    @Column(nullable = false)
+    private LocalDateTime updateAt = LocalDateTime.now();
 
     /**
      * 最后一次收到消息的时间，
@@ -197,14 +204,6 @@ public class User {
         this.pushID = pushID;
     }
 
-    public LocalDate getCreateAt() {
-        return createAt;
-    }
-
-    public void setCreateAt(LocalDate createAt) {
-        this.createAt = createAt;
-    }
-
     public LocalDate getLastReceivedAt() {
         return lastReceivedAt;
     }
@@ -235,5 +234,21 @@ public class User {
 
     public void setGroups(Set<Group> groups) {
         this.groups = groups;
+    }
+
+    public LocalDateTime getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(LocalDateTime createAt) {
+        this.createAt = createAt;
+    }
+
+    public LocalDateTime getUpdateAt() {
+        return updateAt;
+    }
+
+    public void setUpdateAt(LocalDateTime updateAt) {
+        this.updateAt = updateAt;
     }
 }

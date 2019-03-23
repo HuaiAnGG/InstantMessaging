@@ -1,6 +1,6 @@
 package net.huaiangg.web.mt.push.service;
 
-import net.huaiangg.web.mt.push.bean.User;
+import net.huaiangg.web.mt.push.db.User;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -42,7 +42,7 @@ public class AccountService {
         System.out.println("已经进入getUser函数");
         User user = new User();
         user.setName("HuaiAnGG");
-        user.setSex("男");
+        user.setSex(0);
         return user;
     }
 }

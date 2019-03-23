@@ -1,10 +1,12 @@
 package net.huaiangg.web.mt.push.db;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * @Description:
@@ -51,17 +53,18 @@ public class Message {
     private int type;
 
     /**
-     * 创建时间戳，在创建的时候就已经写进去
+     * 定义为创建时间戳，在创建时就已经写入
+     */
+    @CreationTimestamp
+    @Column(nullable = false)
+    private LocalDateTime createAt = LocalDateTime.now();
+
+    /**
+     * 定义为更新时间戳，在创建时就已经写入
      */
     @UpdateTimestamp
     @Column(nullable = false)
-    private LocalDate createAt = LocalDate.now();
-
-    /**
-     * 最后一次收到消息的时间，
-     */
-    @Column
-    private LocalDate lastReceivedAt = LocalDate.now();
+    private LocalDateTime updateAt = LocalDateTime.now();
 
     /**
      * 发送者 不为空
@@ -126,22 +129,6 @@ public class Message {
         this.type = type;
     }
 
-    public LocalDate getCreateAt() {
-        return createAt;
-    }
-
-    public void setCreateAt(LocalDate createAt) {
-        this.createAt = createAt;
-    }
-
-    public LocalDate getLastReceivedAt() {
-        return lastReceivedAt;
-    }
-
-    public void setLastReceivedAt(LocalDate lastReceivedAt) {
-        this.lastReceivedAt = lastReceivedAt;
-    }
-
     public User getSender() {
         return sender;
     }
@@ -188,5 +175,21 @@ public class Message {
 
     public void setGroupID(String groupID) {
         this.groupID = groupID;
+    }
+
+    public LocalDateTime getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(LocalDateTime createAt) {
+        this.createAt = createAt;
+    }
+
+    public LocalDateTime getUpdateAt() {
+        return updateAt;
+    }
+
+    public void setUpdateAt(LocalDateTime updateAt) {
+        this.updateAt = updateAt;
     }
 }

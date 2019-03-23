@@ -4,7 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * @Description: 用户间的关系
@@ -67,13 +67,20 @@ public class UserFollow {
      */
     @UpdateTimestamp
     @Column(nullable = false)
-    private LocalDate createAt = LocalDate.now();
+    private LocalDateTime createAt = LocalDateTime.now();
 
     /**
-     * 最后一次收到消息的时间，
+     * 定义为更新时间戳，在创建时就已经写入
+     */
+    @UpdateTimestamp
+    @Column(nullable = false)
+    private LocalDateTime updateAt = LocalDateTime.now();
+
+    /**
+     * 消息送达的时间
      */
     @Column
-    private LocalDate lastReceivedAt = LocalDate.now();
+    private LocalDateTime receiveAt = LocalDateTime.now();
 
 
     public String getId() {
@@ -124,19 +131,19 @@ public class UserFollow {
         this.alias = alias;
     }
 
-    public LocalDate getCreateAt() {
+    public LocalDateTime getCreateAt() {
         return createAt;
     }
 
-    public void setCreateAt(LocalDate createAt) {
+    public void setCreateAt(LocalDateTime createAt) {
         this.createAt = createAt;
     }
 
-    public LocalDate getLastReceivedAt() {
-        return lastReceivedAt;
+    public LocalDateTime getUpdateAt() {
+        return updateAt;
     }
 
-    public void setLastReceivedAt(LocalDate lastReceivedAt) {
-        this.lastReceivedAt = lastReceivedAt;
+    public void setUpdateAt(LocalDateTime updateAt) {
+        this.updateAt = updateAt;
     }
 }
