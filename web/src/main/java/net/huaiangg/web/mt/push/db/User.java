@@ -1,10 +1,15 @@
 package net.huaiangg.web.mt.push.db;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
 
 /**
  * @Description: User的model
@@ -86,6 +91,39 @@ public class User {
      */
     @Column
     private LocalDate lastReceivedAt = LocalDate.now();
+
+    /**
+     *     我关注的人的列表
+     *     对应的数字库字段是 tb_user_follow
+     *     定义为懒加载，默认加载User信息的时候不查询这个集合
+     *     一对多关系；一个用户可以关注多个人
+     */
+    @JoinColumn(name = "originID")
+    @LazyCollection(LazyCollectionOption.EXTRA)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<UserFollow> followsing = new HashSet<>();
+
+    /**
+     *     所有关注我的列表
+     *     对应的数字库字段是 tb_user_follow
+     *     定义为懒加载，默认加载User信息的时候不查询这个集合
+     */
+    @JoinColumn(name = "targetID")
+    @LazyCollection(LazyCollectionOption.EXTRA)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<UserFollow> followser = new HashSet<>();
+
+    /**
+     * 所有创建的群
+     * 懒加载集合方式为尽可能的不加载具体的数据
+     * 当访问groups.size()仅仅查询数量，不加载具体的Group信息
+     * 只有当遍历集合的时候才加载具体的数据
+     * 对应的字段为：Group.ownerID
+     */
+    @JoinColumn(name = "groupID")
+    @LazyCollection(LazyCollectionOption.EXTRA)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Group> groups = new HashSet<>();
 
     public String getId() {
         return id;
@@ -173,5 +211,29 @@ public class User {
 
     public void setLastReceivedAt(LocalDate lastReceivedAt) {
         this.lastReceivedAt = lastReceivedAt;
+    }
+
+    public Set<UserFollow> getFollowsing() {
+        return followsing;
+    }
+
+    public void setFollowsing(Set<UserFollow> followsing) {
+        this.followsing = followsing;
+    }
+
+    public Set<UserFollow> getFollowser() {
+        return followser;
+    }
+
+    public void setFollowser(Set<UserFollow> followser) {
+        this.followser = followser;
+    }
+
+    public Set<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(Set<Group> groups) {
+        this.groups = groups;
     }
 }
