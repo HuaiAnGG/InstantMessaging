@@ -1,11 +1,10 @@
-package net.huaiangg.web.mt.push.db;
+package net.huaiangg.web.mt.push.bean.db;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**

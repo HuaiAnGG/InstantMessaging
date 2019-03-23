@@ -1,4 +1,4 @@
-package net.huaiangg.web.mt.push.db;
+package net.huaiangg.web.mt.push.bean.db;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;

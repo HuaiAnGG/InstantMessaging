@@ -1,7 +1,7 @@
 package net.huaiangg.web.mt.push;
 
+import net.huaiangg.web.mt.push.provider.GsonProvider;
 import net.huaiangg.web.mt.push.service.AccountService;
-import org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JacksonJsonProvider;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import java.util.logging.Logger;
@@ -18,7 +18,9 @@ public class Application extends ResourceConfig {
         //packages("net.huaiangg.web.mt.push.service");
         packages(AccountService.class.getPackage().getName());
         // 注册JSON解析器
-        register(JacksonJsonProvider.class);
+//        register(JacksonJsonProvider.class);
+        // 替换系统解释器为GSON
+        register(GsonProvider.class);
         // 注册日志打印输出
         register(Logger.class);
     }
