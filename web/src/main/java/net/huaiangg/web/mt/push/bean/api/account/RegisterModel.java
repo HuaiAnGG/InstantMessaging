@@ -1,5 +1,6 @@
 package net.huaiangg.web.mt.push.bean.api.account;
 
+import com.google.common.base.Strings;
 import com.google.gson.annotations.Expose;
 
 /**
@@ -14,6 +15,8 @@ public class RegisterModel {
     private String password;
     @Expose
     private String name;
+    @Expose
+    private String pushID;
 
     public String getAccount() {
         return account;
@@ -37,5 +40,26 @@ public class RegisterModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPushID() {
+        return pushID;
+    }
+
+    public void setPushID(String pushID) {
+        this.pushID = pushID;
+    }
+
+    /**
+     * 校验
+     * @param model 参数
+     * @return 结果
+     */
+    public static boolean check(RegisterModel model) {
+        return model != null
+                && !Strings.isNullOrEmpty(model.account)
+                && !Strings.isNullOrEmpty(model.password)
+                && !Strings.isNullOrEmpty(model.name);
+
     }
 }

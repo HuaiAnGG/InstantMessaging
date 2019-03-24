@@ -6,6 +6,7 @@ import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
+import java.security.Principal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -19,7 +20,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "tb_user")
-public class User {
+public class User implements Principal {
 
     /**
      * 主键

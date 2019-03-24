@@ -1,6 +1,7 @@
 package net.huaiangg.web.mt.push.bean.card;
 
 import com.google.gson.annotations.Expose;
+import net.huaiangg.web.mt.push.bean.db.User;
 
 import java.time.LocalDateTime;
 
@@ -39,13 +40,34 @@ public class UserCard {
      * 我与当前User的关系状态，是否已经关注了这个人
      */
     @Expose
-    private int isFollow;
+    private boolean isFollow;
 
     /**
      * 用户信息更新时间
      */
     @Expose
     private LocalDateTime modifyAt;
+
+    public UserCard(final User user) {
+        this(user, false);
+    }
+
+    public UserCard(final User user, boolean isFollow) {
+        this.isFollow = isFollow;
+
+        this.id = user.getId();
+        this.name = user.getName();
+        this.phone = user.getPhone();
+        this.portrait = user.getPortrait();
+        this.desc = user.getDescription();
+        this.sex = user.getSex();
+        this.modifyAt = user.getUpdateAt();
+
+        // TODO 得到关注人和粉丝的数量
+        // user.getFollowers().size()
+        // 懒加载会报错，因为没有Session
+
+    }
 
     public String getId() {
         return id;
@@ -111,12 +133,12 @@ public class UserCard {
         this.following = following;
     }
 
-    public int getIsFollow() {
+    public boolean isFollow() {
         return isFollow;
     }
 
-    public void setIsFollow(int isFollow) {
-        this.isFollow = isFollow;
+    public void setFollow(boolean follow) {
+        isFollow = follow;
     }
 
     public LocalDateTime getModifyAt() {

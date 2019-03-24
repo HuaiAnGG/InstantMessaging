@@ -99,40 +99,40 @@ public abstract class RecyclerAdapter<Data>
         return holder;
     }
 
-    /**
-     * 点击事件
-     *
-     * @param v 视图的对象
-     */
-    @Override
-    public void onClick(View v) {
-        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-        if (this.mListenter != null) {
-            // 得到ViewHolder 当前对应的适配器中的坐标
-            int position = viewHolder.getAdapterPosition();
-            // 回调方法
-            this.mListenter.onItemClick(viewHolder, mDataList.get(position));
-        }
-    }
-
-    /**
-     * 长按点击事件
-     *
-     * @param v 视图的对象
-     * @return
-     */
-    @Override
-    public boolean onLongClick(View v) {
-        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-        if (this.mListenter != null) {
-            // 得到ViewHolder 当前对应的适配器中的坐标
-            int position = viewHolder.getAdapterPosition();
-            // 回调方法
-            this.mListenter.onItemLongClick(viewHolder, mDataList.get(position));
-            return true;
-        }
-        return false;
-    }
+//    /**
+//     * 点击事件
+//     *
+//     * @param v 视图的对象
+//     */
+//    @Override
+//    public void onClick(View v) {
+//        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
+//        if (this.mListenter != null) {
+//            // 得到ViewHolder 当前对应的适配器中的坐标
+//            int position = viewHolder.getAdapterPosition();
+//            // 回调方法
+//            this.mListenter.onItemClick(viewHolder, mDataList.get(position));
+//        }
+//    }
+//
+//    /**
+//     * 长按点击事件
+//     *
+//     * @param v 视图的对象
+//     * @return
+//     */
+//    @Override
+//    public boolean onLongClick(View v) {
+//        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
+//        if (this.mListenter != null) {
+//            // 得到ViewHolder 当前对应的适配器中的坐标
+//            int position = viewHolder.getAdapterPosition();
+//            // 回调方法
+//            this.mListenter.onItemLongClick(viewHolder, mDataList.get(position));
+//            return true;
+//        }
+//        return false;
+//    }
 
     /**
      * 设置适配器监听
@@ -233,11 +233,70 @@ public abstract class RecyclerAdapter<Data>
      */
     public void replace(Collection<Data> dataList) {
         mDataList.clear();
-        if (dataList == null || dataList.size() == 0) {
+        if (dataList == null || dataList.size() == 0)
             return;
-        }
         mDataList.addAll(dataList);
         notifyDataSetChanged();
+    }
+
+    @Override
+    public void update(Data data, ViewHolder<Data> holder) {
+        // 得到当前ViewHolder的坐标
+        int pos = holder.getAdapterPosition();
+        if (pos >= 0) {
+            // 进行数据的移除与更新
+            mDataList.remove(pos);
+            mDataList.add(pos, data);
+            // 通知这个坐标下的数据有更新
+            notifyItemChanged(pos);
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
+        if (this.mListenter != null) {
+            // 得到ViewHolder当前对应的适配器中的坐标
+            int pos = viewHolder.getAdapterPosition();
+            // 回掉方法
+            this.mListenter.onItemClick(viewHolder, mDataList.get(pos));
+        }
+
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
+        if (this.mListenter != null) {
+            // 得到ViewHolder当前对应的适配器中的坐标
+            int pos = viewHolder.getAdapterPosition();
+            // 回掉方法
+            this.mListenter.onItemLongClick(viewHolder, mDataList.get(pos));
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 设置适配器的监听
+     *
+     * @param adapterListener AdapterListener
+     */
+    public void setListener(AdapterListenter<Data> adapterListener) {
+        this.mListenter = adapterListener;
+    }
+
+    /**
+     * 我们的自定义监听器
+     *
+     * @param <Data> 范型
+     */
+    public interface AdapterListenter<Data> {
+        // 当Cell点击的时候触发
+        void onItemClick(RecyclerAdapter.ViewHolder holder, Data data);
+
+        // 当Cell长按时触发
+        void onItemLongClick(RecyclerAdapter.ViewHolder holder, Data data);
     }
 
     /**
@@ -280,6 +339,24 @@ public abstract class RecyclerAdapter<Data>
             if (this.callback != null) {
                 this.callback.update(data, this);
             }
+        }
+    }
+
+    /**
+     * 对回调接口做一次实现AdapterListener
+     *
+     * @param <Data>
+     */
+    public static abstract class AdapterListenerImpl<Data> implements AdapterListenter<Data> {
+
+        @Override
+        public void onItemClick(ViewHolder holder, Data data) {
+
+        }
+
+        @Override
+        public void onItemLongClick(ViewHolder holder, Data data) {
+
         }
     }
 }
