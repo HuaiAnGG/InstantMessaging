@@ -7,6 +7,7 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.graphics.drawable.ColorDrawable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Property;
 import android.view.View;
 
@@ -20,14 +21,13 @@ import org.huaiangg.mt.mtclient.activities.MainActivity;
 import org.huaiangg.mt.mtclient.frags.assist.PermissionsFragment;
 
 /**
- * @description:
+ * @description: 启动activity
  * @author: HuaiAngg
  * @create: 2019-03-24 16:53
  */
 public class LaunchActivity extends Activity {
     // Drawable
     private ColorDrawable mBgDrawable;
-
 
     @Override
     protected int getContentLayoutID() {
@@ -91,6 +91,7 @@ public class LaunchActivity extends Activity {
                     @Override
                     public void run() {
                         waitPushReceiverId();
+                        Log.d("debug", "run: 等待个推框架对我们的PushId设置好值");
                     }
                 }, 500);
     }

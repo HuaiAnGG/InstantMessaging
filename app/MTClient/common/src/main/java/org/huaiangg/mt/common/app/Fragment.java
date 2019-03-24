@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
- * @description:
+ * @description: Fragment基类
  * @author: HuaiAngg
  * @create: 2019-03-18 19:53
  */
