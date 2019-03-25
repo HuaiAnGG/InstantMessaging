@@ -2,11 +2,14 @@ package org.huaiangg.mt.mtclient;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.igexin.sdk.PushManager;
 
 import org.huaiangg.mt.common.app.Application;
 import org.huaiangg.mt.factory.Factory;
+
+import static android.support.constraint.Constraints.TAG;
 
 /**
  * @description:
@@ -43,8 +46,10 @@ public class App extends Application {
         @Override
         public void onActivityResumed(Activity activity) {
             // 推送进行初始化
+            Log.d(TAG, "onActivityResumed: 推送进行初始化");
             PushManager.getInstance().initialize(App.this, AppPushService.class);
             // 推送注册消息接收服务
+            Log.d(TAG, "onActivityResumed: 推送注册消息接收服务");
             PushManager.getInstance().registerPushIntentService(App.this, AppMessageReceiverService.class);
         }
 
