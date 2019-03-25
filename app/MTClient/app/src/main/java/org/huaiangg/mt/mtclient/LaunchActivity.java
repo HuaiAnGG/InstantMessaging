@@ -26,6 +26,7 @@ import org.huaiangg.mt.mtclient.frags.assist.PermissionsFragment;
  * @create: 2019-03-24 16:53
  */
 public class LaunchActivity extends Activity {
+    private static final String TAG = LaunchActivity.class.getSimpleName();
     // Drawable
     private ColorDrawable mBgDrawable;
 
@@ -70,6 +71,7 @@ public class LaunchActivity extends Activity {
     private void waitPushReceiverId() {
         if (Account.isLogin()) {
             // 已经登录情况下，判断是否绑定
+            Log.d(TAG, "waitPushReceiverId: 已经登录情况下，判断是否绑定");
             // 如果没有绑定则等待广播接收器进行绑定
             if (Account.isBind()) {
                 skip();
@@ -77,8 +79,10 @@ public class LaunchActivity extends Activity {
             }
         } else {
             // 没有登录
+            Log.d(TAG, "waitPushReceiverId: 没有登录");
             // 如果拿到了PushId, 没有登录是不能绑定PushId的
             if (!TextUtils.isEmpty(Account.getPushId())) {
+                Log.d(TAG, "waitPushReceiverId: 如果拿到了PushId, 没有登录是不能绑定PushId的");
                 // 跳转
                 skip();
                 return;
@@ -90,8 +94,8 @@ public class LaunchActivity extends Activity {
                 .postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        Log.d(TAG, "run: 循环等待中...");
                         waitPushReceiverId();
-                        Log.d("debug", "run: 等待个推框架对我们的PushId设置好值");
                     }
                 }, 500);
     }

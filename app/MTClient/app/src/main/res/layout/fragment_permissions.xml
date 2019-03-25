@@ -28,14 +28,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/len_48"
             android:orientation="vertical"
             android:padding="@dimen/len_16">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/len_16"
-                android:layout_marginTop="@dimen/len_16">
+                android:layout_marginTop="@dimen/len_16"
+                android:layout_marginBottom="@dimen/len_16">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -68,8 +69,8 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/len_16"
-                android:layout_marginTop="@dimen/len_16">
+                android:layout_marginTop="@dimen/len_16"
+                android:layout_marginBottom="@dimen/len_16">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -102,8 +103,8 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/len_16"
-                android:layout_marginTop="@dimen/len_16">
+                android:layout_marginTop="@dimen/len_16"
+                android:layout_marginBottom="@dimen/len_16">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -136,8 +137,8 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/len_16"
-                android:layout_marginTop="@dimen/len_16">
+                android:layout_marginTop="@dimen/len_16"
+                android:layout_marginBottom="@dimen/len_16">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -172,8 +173,8 @@
                 android:layout_width="@dimen/len_172"
                 android:layout_height="@dimen/len_44"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="@dimen/len_48"
                 android:layout_marginTop="@dimen/len_48"
+                android:layout_marginBottom="@dimen/len_48"
                 android:background="@drawable/sel_btn_bg_accent_44"
                 android:text="@string/label_permission_submit"
                 android:textColor="@color/white"

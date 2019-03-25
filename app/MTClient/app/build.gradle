@@ -18,6 +18,10 @@ android {
                 PACKAGE_NAME    : applicationId
         ]
 
+        //指定所需的 CPU 架构
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

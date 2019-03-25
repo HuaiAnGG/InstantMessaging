@@ -20,7 +20,10 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven {url "https://www.jitpack.io"}
+        maven { url "https://www.jitpack.io" }
+        maven { url 'https://maven.google.com' }
+        //个推私有Maven URL地址
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
     }
 }
 
@@ -46,7 +49,7 @@ ext{
 
     gsonVersion = '2.8.0'
     retrofitVersion = '2.5.0'
-    getuiVersion = '2.9.3.0'
+    getuiVersion = '2.13.0.0'
     dbflowVersion = "4.0.0-beta7"
     okhttp3Version = '3.14.0'
     okioVersion = '2.2.2'
