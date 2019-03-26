@@ -86,27 +86,27 @@ public abstract class RecyclerAdapter<Data>
         ViewHolder<Data> holder = onCreateViewHolder(root, viewType);
 
         //设置view的tag为id，进行双向绑定
-        root.setTag(R.id.tag_recycler_holder);
+        root.setTag(R.id.tag_recycler_holder, holder);
         // 设置时间点击
         root.setOnClickListener(this);
         root.setOnLongClickListener(this);
 
         // 进行界面注解绑定
-        holder.unbinder = ButterKnife.bind(root);
+        holder.unbinder = ButterKnife.bind(holder, root);
         // 绑定callback
         holder.callback = this;
 
         return holder;
     }
 
-    /**
-     * 设置适配器监听
-     *
-     * @param adapterListenter
-     */
-    public void setListenter(AdapterListenter<Data> adapterListenter) {
-        this.mListenter = adapterListenter;
-    }
+//    /**
+//     * 设置适配器监听
+//     *
+//     * @param adapterListenter
+//     */
+//    public void setListenter(AdapterListenter<Data> adapterListenter) {
+//        this.mListenter = adapterListenter;
+//    }
 
     /**
      * 得到一个新的ViewHolder
@@ -220,7 +220,7 @@ public abstract class RecyclerAdapter<Data>
     @Override
     public void onClick(View v) {
         ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-        if (this.mListenter != null && null != viewHolder) {
+        if (this.mListenter != null) {
             // 得到ViewHolder当前对应的适配器中的坐标
             int pos = viewHolder.getAdapterPosition();
             // 回掉方法
@@ -285,7 +285,7 @@ public abstract class RecyclerAdapter<Data>
          */
         void bind(Data data) {
             this.mData = data;
-            onBind(mData);
+            onBind(data);
         }
 
         /**

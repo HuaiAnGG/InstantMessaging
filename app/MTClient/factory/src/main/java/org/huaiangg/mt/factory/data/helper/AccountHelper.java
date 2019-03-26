@@ -91,34 +91,30 @@ public class AccountHelper {
             // 请求成功返回
             // 从返回中得到我们的全局Model，内部是使用的Gson进行解析
             RspModel<AccountRspModel> rspModel = response.body();
-            /**
-             * 容易抛出 NullPointerException
-             */
-            if ( null == response.body() ) {
-                Log.e("空针异常", "onResponse: --------------------->>>>>>>>>>>>>>>>. " );
-            }
             if (rspModel.success()) {
                 // 拿到实体
-                AccountRspModel accountRspModel = response.body().getResult();
+                AccountRspModel accountRspModel = rspModel.getResult();
                 // 获取我的信息
                 User user = accountRspModel.getUser();
-                // 第一种，之间保存
                 user.save();
-                    /*
-                    // 第二种通过ModelAdapter
-                    FlowManager.getModelAdapter(User.class)
-                            .save(user);
 
-                    // 第三种，事务中
-                    DatabaseDefinition definition = FlowManager.getDatabase(AppDatabase.class);
-                    definition.beginTransactionAsync(new ITransaction() {
-                        @Override
-                        public void execute(DatabaseWrapper databaseWrapper) {
-                            FlowManager.getModelAdapter(User.class)
-                                    .save(user);
-                        }
-                    }).build().execute();
-                    */
+                // 第一种，之间保存
+                // user.save();
+                /*
+                // 第二种通过ModelAdapter
+                FlowManager.getModelAdapter(User.class)
+                        .save(user);
+
+                // 第三种，事务中
+                DatabaseDefinition definition = FlowManager.getDatabase(AppDatabase.class);
+                definition.beginTransactionAsync(new ITransaction() {
+                    @Override
+                    public void execute(DatabaseWrapper databaseWrapper) {
+                        FlowManager.getModelAdapter(User.class)
+                                .save(user);
+                    }
+                }).build().execute();
+                */
                 // 同步到XML持久化中
                 Account.login(accountRspModel);
 
@@ -135,8 +131,6 @@ public class AccountHelper {
                 }
             } else {
                 // 错误解析
-                Log.d("错误代码", "onResponse -->> Code:  " + response.code());
-//                Factory.decodeRspCode(rspModel, callback);
                 Factory.decodeRspCode(rspModel, callback);
             }
         }
