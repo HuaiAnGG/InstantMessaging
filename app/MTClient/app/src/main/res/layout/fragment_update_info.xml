@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:background="@drawable/bg_src_tianjin"
-    tools:context="net.qiujuer.italker.push.frags.user.UpdateInfoFragment">
+    tools:context="org.huaiangg.mt.mtclient.frags.user.UpdateInfoFragment">
 
 
     <android.support.constraint.ConstraintLayout
@@ -29,7 +29,7 @@
             app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 
-        <net.qiujuer.italker.common.widget.PortraitView
+        <org.huaiangg.mt.common.widget.PortraitView
             android:id="@+id/im_portrait"
             android:layout_width="@dimen/len_92"
             android:layout_height="@dimen/len_92"

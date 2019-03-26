@@ -78,7 +78,7 @@ public class User implements Principal {
      * 用户推送唯一识别码
      */
     @Column
-    private String pushID;
+    private String pushId;
 
     /**
      * 创建时间戳，在创建的时候就已经写进去
@@ -197,12 +197,12 @@ public class User implements Principal {
         this.token = token;
     }
 
-    public String getPushID() {
-        return pushID;
+    public String getPushId() {
+        return pushId;
     }
 
-    public void setPushID(String pushID) {
-        this.pushID = pushID;
+    public void setPushId(String pushID) {
+        this.pushId = pushID;
     }
 
     public LocalDate getLastReceivedAt() {

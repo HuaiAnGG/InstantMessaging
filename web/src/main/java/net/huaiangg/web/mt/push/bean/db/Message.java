@@ -75,7 +75,7 @@ public class Message {
     @ManyToOne(optional = false)
     private User sender;
     @Column(nullable = false, updatable = false, insertable = false)
-    private String senderID;
+    private String senderId;
 
     /**
      * 接收者 可为空
@@ -85,7 +85,7 @@ public class Message {
     @ManyToOne
     private User receiver;
     @Column(updatable = false, insertable = false)
-    private String receiverID;
+    private String receiverId;
 
     /**
      * 一个群可以接收多个消息
@@ -94,7 +94,7 @@ public class Message {
     @ManyToOne
     private Group group;
     @Column(updatable = false, insertable = false)
-    private String groupID;
+    private String groupId;
 
     public String getId() {
         return id;
@@ -136,12 +136,12 @@ public class Message {
         this.sender = sender;
     }
 
-    public String getSenderID() {
-        return senderID;
+    public String getSenderId() {
+        return senderId;
     }
 
-    public void setSenderID(String senderID) {
-        this.senderID = senderID;
+    public void setSenderId(String senderID) {
+        this.senderId = senderID;
     }
 
     public User getReceiver() {
@@ -152,12 +152,12 @@ public class Message {
         this.receiver = receiver;
     }
 
-    public String getReceiverID() {
-        return receiverID;
+    public String getReceiverId() {
+        return receiverId;
     }
 
-    public void setReceiverID(String receiverID) {
-        this.receiverID = receiverID;
+    public void setReceiverId(String receiverID) {
+        this.receiverId = receiverID;
     }
 
     public Group getGroup() {
@@ -168,12 +168,12 @@ public class Message {
         this.group = group;
     }
 
-    public String getGroupID() {
-        return groupID;
+    public String getGroupId() {
+        return groupId;
     }
 
-    public void setGroupID(String groupID) {
-        this.groupID = groupID;
+    public void setGroupId(String groupID) {
+        this.groupId = groupID;
     }
 
     public LocalDateTime getCreateAt() {

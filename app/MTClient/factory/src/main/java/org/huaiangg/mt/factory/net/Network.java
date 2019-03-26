@@ -2,7 +2,7 @@ package org.huaiangg.mt.factory.net;
 
 import android.text.TextUtils;
 
-import org.huaiangg.mt.Common;
+import org.huaiangg.mt.common.Common;
 import org.huaiangg.mt.factory.Factory;
 import org.huaiangg.mt.factory.persistence.Account;
 

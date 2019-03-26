@@ -54,7 +54,7 @@ public class PushHistory {
     @JoinColumn(name = "receiverID")
     private User receiver;
     @Column(nullable = false, updatable = false, insertable = false)
-    private String receiverID;
+    private String receiverId;
 
     /**
      * 发送者
@@ -66,14 +66,14 @@ public class PushHistory {
     @JoinColumn(name = "senderID")
     private User sender;
     @Column(updatable = false, insertable = false)
-    private String senderID;
+    private String senderId;
 
     /**
      * 接收者放前传台下的设备推送ID
      * 对应User.PushID 可以为null
      */
     @Column
-    private String receiverPushID;
+    private String receiverPushId;
 
     /**
      * 定义为创建时间戳，在创建时就已经写入
@@ -127,20 +127,20 @@ public class PushHistory {
         this.receiver = receiver;
     }
 
-    public String getReceiverID() {
-        return receiverID;
+    public String getReceiverId() {
+        return receiverId;
     }
 
-    public void setReceiverID(String receiverID) {
-        this.receiverID = receiverID;
+    public void setReceiverId(String receiverID) {
+        this.receiverId = receiverID;
     }
 
-    public String getReceiverPushID() {
-        return receiverPushID;
+    public String getReceiverPushId() {
+        return receiverPushId;
     }
 
-    public void setReceiverPushID(String receiverPushID) {
-        this.receiverPushID = receiverPushID;
+    public void setReceiverPushId(String receiverPushID) {
+        this.receiverPushId = receiverPushID;
     }
 
     public LocalDateTime getCreateAt() {
@@ -175,11 +175,11 @@ public class PushHistory {
         this.sender = sender;
     }
 
-    public String getSenderID() {
-        return senderID;
+    public String getSenderId() {
+        return senderId;
     }
 
-    public void setSenderID(String senderID) {
-        this.senderID = senderID;
+    public void setSenderId(String senderID) {
+        this.senderId = senderID;
     }
 }

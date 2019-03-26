@@ -48,7 +48,7 @@ public class Apply {
     @JoinColumn(name = "applicantID")
     private User applicant;
     @Column(updatable = false, insertable = false)
-    private String applicantID;
+    private String applicantId;
 
     /**
      * 附件 可为空
@@ -63,7 +63,7 @@ public class Apply {
      * type->TYPE_ADD_GROUP：Group.id
      */
     @Column(nullable = false)
-    private String targetID;
+    private String targetId;
 
     /**
      * 当前的申请类型
@@ -109,12 +109,12 @@ public class Apply {
         this.applicant = applicant;
     }
 
-    public String getApplicantID() {
-        return applicantID;
+    public String getApplicantId() {
+        return applicantId;
     }
 
-    public void setApplicantID(String applicantID) {
-        this.applicantID = applicantID;
+    public void setApplicantId(String applicantID) {
+        this.applicantId = applicantID;
     }
 
     public String getAttach() {
@@ -125,12 +125,12 @@ public class Apply {
         this.attach = attach;
     }
 
-    public String getTargetID() {
-        return targetID;
+    public String getTargetId() {
+        return targetId;
     }
 
-    public void setTargetID(String targetID) {
-        this.targetID = targetID;
+    public void setTargetId(String targetID) {
+        this.targetId = targetID;
     }
 
     public int getType() {

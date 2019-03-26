@@ -37,13 +37,13 @@ public class UserFollow {
      * optional 不可选，必须储存，一条记录一定要有一个“你”
      */
     @ManyToOne(optional = false)
-    // 定义关联表的字段名origin，对应的是User.id
-    @JoinColumn(name = "origin")
+    // 定义关联表的字段名originId，对应的是User.id
+    @JoinColumn(name = "originId")
     private User origin;
 
     // 把这个列抽取出来存到model中，不允许为空，不允许更新，不允许插入
     @Column(nullable = false, updatable = false, insertable = false)
-    private String originID;
+    private String originId;
 
     /**
      * 定义关注的目标 你关注的人
@@ -57,7 +57,7 @@ public class UserFollow {
     private User target;
     // 把这个列抽取出来存到model中，不允许为空，不允许更新，不允许插入
     @Column(nullable = false, updatable = false, insertable = false)
-    private String targetID;
+    private String targetId;
 
     // 别名,也是target的昵称
     private String alias;
@@ -99,12 +99,12 @@ public class UserFollow {
         this.origin = origin;
     }
 
-    public String getOriginID() {
-        return originID;
+    public String getOriginId() {
+        return originId;
     }
 
-    public void setOriginID(String originID) {
-        this.originID = originID;
+    public void setOriginId(String originID) {
+        this.originId = originID;
     }
 
     public User getTarget() {
@@ -115,12 +115,12 @@ public class UserFollow {
         this.target = target;
     }
 
-    public String getTargetID() {
-        return targetID;
+    public String getTargetId() {
+        return targetId;
     }
 
-    public void setTargetID(String targetID) {
-        this.targetID = targetID;
+    public void setTargetId(String targetID) {
+        this.targetId = targetID;
     }
 
     public String getAlias() {

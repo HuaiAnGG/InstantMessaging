@@ -90,7 +90,7 @@ public class GroupMember {
     @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Group group;
     @Column(nullable = false, updatable = false, insertable = false)
-    private String groupID;
+    private String groupId;
 
     public String getId() {
         return id;
@@ -164,11 +164,11 @@ public class GroupMember {
         this.group = group;
     }
 
-    public String getGroupID() {
-        return groupID;
+    public String getGroupId() {
+        return groupId;
     }
 
-    public void setGroupID(String groupID) {
-        this.groupID = groupID;
+    public void setGroupId(String groupID) {
+        this.groupId = groupID;
     }
 }

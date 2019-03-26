@@ -1,6 +1,7 @@
 package org.huaiangg.mt.factory;
 
 import android.support.annotation.StringRes;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -102,6 +103,7 @@ public class Factory {
         // 进行Code区分
         switch (model.getCode()) {
             case RspModel.SUCCEED:
+                Log.i("网络请求码", "decodeRspCode: 网络返回的Code正确");
                 return;
             case RspModel.ERROR_SERVICE:
                 decodeRspCode(R.string.data_rsp_error_service, callback);

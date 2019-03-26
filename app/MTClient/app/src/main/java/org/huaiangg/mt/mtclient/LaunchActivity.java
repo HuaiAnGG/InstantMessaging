@@ -74,6 +74,7 @@ public class LaunchActivity extends Activity {
             Log.d(TAG, "waitPushReceiverId: 已经登录情况下，判断是否绑定");
             // 如果没有绑定则等待广播接收器进行绑定
             if (Account.isBind()) {
+                Log.i(TAG, "waitPushReceiverId: 广播接收器绑定");
                 skip();
                 return;
             }
@@ -82,7 +83,7 @@ public class LaunchActivity extends Activity {
             Log.d(TAG, "waitPushReceiverId: 没有登录");
             // 如果拿到了PushId, 没有登录是不能绑定PushId的
             if (!TextUtils.isEmpty(Account.getPushId())) {
-                Log.d(TAG, "waitPushReceiverId: 如果拿到了PushId, 没有登录是不能绑定PushId的");
+                Log.d(TAG, "waitPushReceiverId: 拿到了PushId");
                 // 跳转
                 skip();
                 return;

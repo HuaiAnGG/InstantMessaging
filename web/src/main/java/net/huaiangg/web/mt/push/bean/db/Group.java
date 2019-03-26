@@ -73,7 +73,7 @@ public class Group {
     private User owner;
 
     @Column(nullable = false, updatable = false, insertable = false)
-    private String ownerID;
+    private String ownerId;
 
     public String getId() {
         return id;
@@ -131,11 +131,11 @@ public class Group {
         this.owner = owner;
     }
 
-    public String getOwnerID() {
-        return ownerID;
+    public String getOwnerId() {
+        return ownerId;
     }
 
-    public void setOwnerID(String ownerID) {
-        this.ownerID = ownerID;
+    public void setOwnerId(String ownerID) {
+        this.ownerId = ownerID;
     }
 }

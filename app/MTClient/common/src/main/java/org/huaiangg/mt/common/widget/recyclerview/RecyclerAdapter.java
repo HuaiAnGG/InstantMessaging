@@ -99,41 +99,6 @@ public abstract class RecyclerAdapter<Data>
         return holder;
     }
 
-//    /**
-//     * 点击事件
-//     *
-//     * @param v 视图的对象
-//     */
-//    @Override
-//    public void onClick(View v) {
-//        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-//        if (this.mListenter != null) {
-//            // 得到ViewHolder 当前对应的适配器中的坐标
-//            int position = viewHolder.getAdapterPosition();
-//            // 回调方法
-//            this.mListenter.onItemClick(viewHolder, mDataList.get(position));
-//        }
-//    }
-//
-//    /**
-//     * 长按点击事件
-//     *
-//     * @param v 视图的对象
-//     * @return
-//     */
-//    @Override
-//    public boolean onLongClick(View v) {
-//        ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-//        if (this.mListenter != null) {
-//            // 得到ViewHolder 当前对应的适配器中的坐标
-//            int position = viewHolder.getAdapterPosition();
-//            // 回调方法
-//            this.mListenter.onItemLongClick(viewHolder, mDataList.get(position));
-//            return true;
-//        }
-//        return false;
-//    }
-
     /**
      * 设置适配器监听
      *
@@ -162,7 +127,7 @@ public abstract class RecyclerAdapter<Data>
     public void onBindViewHolder(@NonNull ViewHolder<Data> holder, int position) {
         // 得到绑定数据
         Data data = mDataList.get(position);
-        // 出发holder的绑定方法
+        // 触发holder的绑定方法
         holder.onBind(data);
     }
 
@@ -255,7 +220,7 @@ public abstract class RecyclerAdapter<Data>
     @Override
     public void onClick(View v) {
         ViewHolder viewHolder = (ViewHolder) v.getTag(R.id.tag_recycler_holder);
-        if (this.mListenter != null) {
+        if (this.mListenter != null && null != viewHolder) {
             // 得到ViewHolder当前对应的适配器中的坐标
             int pos = viewHolder.getAdapterPosition();
             // 回掉方法

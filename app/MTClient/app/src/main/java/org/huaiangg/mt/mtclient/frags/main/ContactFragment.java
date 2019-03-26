@@ -10,6 +10,7 @@ import org.huaiangg.mt.mtclient.R;
  */
 public class ContactFragment extends Fragment {
     public ContactFragment() {
+        int [][] a = new int[12][21];
         // Required empty public constructor
     }
 

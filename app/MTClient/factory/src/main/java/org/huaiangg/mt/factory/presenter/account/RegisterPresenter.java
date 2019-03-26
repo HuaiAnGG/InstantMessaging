@@ -6,7 +6,7 @@ import android.util.Log;
 import net.qiujuer.genius.kit.handler.Run;
 import net.qiujuer.genius.kit.handler.runable.Action;
 
-import org.huaiangg.mt.Common;
+import org.huaiangg.mt.common.Common;
 import org.huaiangg.mt.factory.R;
 import org.huaiangg.mt.factory.data.DataSource;
 import org.huaiangg.mt.factory.data.helper.AccountHelper;

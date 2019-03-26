@@ -77,12 +77,12 @@ public class UserFactory {
 
             for (User u : userList) {
                 // 更新为null
-                u.setPushID(null);
+                u.setPushId(null);
                 session.saveOrUpdate(u);
             }
         });
 
-        if (pushId.equalsIgnoreCase(user.getPushID())) {
+        if (pushId.equalsIgnoreCase(user.getPushId())) {
             // 如果当前需要绑定的设备Id，之前已经绑定过了
             // 那么不需要额外绑定
             return user;
@@ -90,12 +90,12 @@ public class UserFactory {
             // 如果当前账户之前的设备Id，和需要绑定的不同
             // 那么需要单点登录，让之前的设备退出账户，
             // 给之前的设备推送一条退出消息
-            if (Strings.isNullOrEmpty(user.getPushID())) {
+            if (Strings.isNullOrEmpty(user.getPushId())) {
                 // TODO 推送一个退出消息
             }
 
             // 更新新的设备Id
-            user.setPushID(pushId);
+            user.setPushId(pushId);
             return update(user);
         }
     }

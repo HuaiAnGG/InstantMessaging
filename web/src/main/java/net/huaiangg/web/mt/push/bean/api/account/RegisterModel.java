@@ -16,7 +16,7 @@ public class RegisterModel {
     @Expose
     private String name;
     @Expose
-    private String pushID;
+    private String pushId;
 
     public String getAccount() {
         return account;
@@ -42,12 +42,12 @@ public class RegisterModel {
         this.name = name;
     }
 
-    public String getPushID() {
-        return pushID;
+    public String getPushId() {
+        return pushId;
     }
 
-    public void setPushID(String pushID) {
-        this.pushID = pushID;
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
     }
 
     /**
