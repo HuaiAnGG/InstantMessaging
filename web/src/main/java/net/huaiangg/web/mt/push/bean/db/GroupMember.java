@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/23 14:57
  */
 @Entity
-@Table(name = "tb_group_member")
+@Table(name = "TB_GROUP_MEMBER")
 public class GroupMember {
 
     // 默认不接受消息
@@ -77,7 +77,7 @@ public class GroupMember {
     /**
      * 成员信息对应的用户信息
      */
-    @JoinColumn(name = "userID")
+    @JoinColumn(name = "userId")
     @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private User user;
     @Column(nullable = false, updatable = false, insertable = false)
@@ -86,7 +86,7 @@ public class GroupMember {
     /**
      * 成员信息对应的群聊信息
      */
-    @JoinColumn(name = "groupID")
+    @JoinColumn(name = "groupId")
     @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Group group;
     @Column(nullable = false, updatable = false, insertable = false)

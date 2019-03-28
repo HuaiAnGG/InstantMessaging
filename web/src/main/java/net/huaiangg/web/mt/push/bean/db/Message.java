@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/22 10:15
  */
 @Entity
-@Table(name = "tb_message")
+@Table(name = "TB_MESSAGE")
 public class Message {
 
     // 字符串类型
@@ -68,10 +68,10 @@ public class Message {
     /**
      * 发送者 不为空
      * 多个消息对应一个发送者
-     * 这个字段仅仅是为了对应sender数据库字段的senderID
+     * 这个字段仅仅是为了对应sender数据库字段的senderId
      * 不允许手动的更新或者插入
      */
-    @JoinColumn(name = "senderID")
+    @JoinColumn(name = "senderId")
     @ManyToOne(optional = false)
     private User sender;
     @Column(nullable = false, updatable = false, insertable = false)
@@ -81,7 +81,7 @@ public class Message {
      * 接收者 可为空
      * 多个消息对应一个接收者
      */
-    @JoinColumn(name = "receiverID")
+    @JoinColumn(name = "receiverId")
     @ManyToOne
     private User receiver;
     @Column(updatable = false, insertable = false)
@@ -90,7 +90,7 @@ public class Message {
     /**
      * 一个群可以接收多个消息
      */
-    @JoinColumn(name = "groupID")
+    @JoinColumn(name = "groupId")
     @ManyToOne
     private Group group;
     @Column(updatable = false, insertable = false)

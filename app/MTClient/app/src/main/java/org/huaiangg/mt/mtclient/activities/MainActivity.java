@@ -99,7 +99,7 @@ public class MainActivity extends Activity
         mNavigation.setOnNavigationItemSelectedListener(this);
 
         Glide.with(this)
-                .load(R.drawable.bg_src_morning)
+                .load(R.drawable.bg_src_qyqx)
                 .centerCrop()
                 .into(new ViewTarget<View, GlideDrawable>(mLayAppbar) {
                     @Override

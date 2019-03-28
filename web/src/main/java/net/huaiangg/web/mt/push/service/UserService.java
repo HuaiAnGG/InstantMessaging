@@ -20,6 +20,7 @@ import javax.ws.rs.core.MediaType;
 // 127.0.0.1/api/user/...
 @Path("/user")
 public class UserService extends BaseService {
+
     // 用户信息修改接口
     // 返回自己的个人信息
     @PUT
@@ -40,4 +41,5 @@ public class UserService extends BaseService {
         // 返回
         return ResponseModel.buildOk(card);
     }
+
 }

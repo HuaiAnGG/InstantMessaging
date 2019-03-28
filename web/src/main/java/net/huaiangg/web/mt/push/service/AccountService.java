@@ -16,9 +16,9 @@ import javax.ws.rs.core.MediaType;
  * @Auther: huaian
  * @Date: 2019/3/18 09:19
  */
+// 127.0.0.1/api/account/...
 @Path("/account")
-public class AccountService extends BaseService{
-
+public class AccountService extends BaseService {
     // 登录
     @POST
     @Path("/login")
@@ -113,7 +113,7 @@ public class AccountService extends BaseService{
         }
 
         // 拿到自己的个人信息
-//         User user = UserFactory.findByToken(token);
+        // User user = UserFactory.findByToken(token);
         User self = getSelf();
         return bind(self, pushId);
     }

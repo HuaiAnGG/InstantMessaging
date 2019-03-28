@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/20 01:36
  */
 @Entity
-@Table(name = "tb_user_follow")
+@Table(name = "TB_USER_FOLLOW")
 public class UserFollow {
 
     /**

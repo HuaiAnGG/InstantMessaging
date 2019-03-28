@@ -19,7 +19,7 @@ import java.util.Set;
  */
 
 @Entity
-@Table(name = "tb_user")
+@Table(name = "TB_USER")
 public class User implements Principal {
 
     /**
@@ -106,7 +106,7 @@ public class User implements Principal {
      *     定义为懒加载，默认加载User信息的时候不查询这个集合
      *     一对多关系；一个用户可以关注多个人
      */
-    @JoinColumn(name = "originID")
+    @JoinColumn(name = "originId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<UserFollow> followsing = new HashSet<>();
@@ -116,7 +116,7 @@ public class User implements Principal {
      *     对应的数字库字段是 tb_user_follow
      *     定义为懒加载，默认加载User信息的时候不查询这个集合
      */
-    @JoinColumn(name = "targetID")
+    @JoinColumn(name = "targetId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<UserFollow> followser = new HashSet<>();
@@ -128,7 +128,7 @@ public class User implements Principal {
      * 只有当遍历集合的时候才加载具体的数据
      * 对应的字段为：Group.ownerID
      */
-    @JoinColumn(name = "groupID")
+    @JoinColumn(name = "groupId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Group> groups = new HashSet<>();

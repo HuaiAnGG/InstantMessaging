@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/22 10:35
  */
 @Entity
-@Table(name = "tb_group")
+@Table(name = "TB_GROUP")
 public class Group {
     /**
      * 主键
@@ -69,7 +69,7 @@ public class Group {
      * cascade：联想级别为ALL，所有得更改（更新，删除等）都将进行关系更新
      */
     @ManyToOne(optional = false, fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    @JoinColumn(name = "ownerID")
+    @JoinColumn(name = "ownerId")
     private User owner;
 
     @Column(nullable = false, updatable = false, insertable = false)

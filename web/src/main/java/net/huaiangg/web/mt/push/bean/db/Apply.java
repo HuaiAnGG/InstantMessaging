@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/23 16:00
  */
 @Entity
-@Table(name = "tb_apply")
+@Table(name = "TB_APPLY")
 public class Apply {
     // 添加好友
     public static final int TYPE_ADD_USER = 1;
@@ -45,7 +45,7 @@ public class Apply {
      * 一个人可以有很多个申请
      */
     @ManyToOne
-    @JoinColumn(name = "applicantID")
+    @JoinColumn(name = "applicantId")
     private User applicant;
     @Column(updatable = false, insertable = false)
     private String applicantId;

@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/23 15:17
  */
 @Entity
-@Table(name = "tb_push_history")
+@Table(name = "TB_PUSH_HISTORY")
 public class PushHistory {
 
     /**
@@ -51,7 +51,7 @@ public class PushHistory {
      * FetchType.EAGER : 加载一条推送消息的时候之间加载用户信息
      */
     @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "receiverID")
+    @JoinColumn(name = "receiverId")
     private User receiver;
     @Column(nullable = false, updatable = false, insertable = false)
     private String receiverId;
@@ -63,7 +63,7 @@ public class PushHistory {
      * FetchType.EAGER : 加载一条发送消息的时候之间加载用户信息
      */
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "senderID")
+    @JoinColumn(name = "senderId")
     private User sender;
     @Column(updatable = false, insertable = false)
     private String senderId;

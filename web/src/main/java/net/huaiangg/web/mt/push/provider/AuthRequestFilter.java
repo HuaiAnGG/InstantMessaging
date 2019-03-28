@@ -21,6 +21,7 @@ import java.security.Principal;
  */
 @Provider
 public class AuthRequestFilter implements ContainerRequestFilter {
+
     // 实现接口的过滤方法
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
