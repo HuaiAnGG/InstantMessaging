@@ -101,25 +101,25 @@ public class User implements Principal {
     private LocalDate lastReceivedAt = LocalDate.now();
 
     /**
-     *     我关注的人的列表
-     *     对应的数字库字段是 tb_user_follow
-     *     定义为懒加载，默认加载User信息的时候不查询这个集合
-     *     一对多关系；一个用户可以关注多个人
+     * 我关注的人的列表
+     * 对应的数字库字段是 tb_user_follow
+     * 定义为懒加载，默认加载User信息的时候不查询这个集合
+     * 一对多关系；一个用户可以关注多个人
      */
     @JoinColumn(name = "originId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<UserFollow> followsing = new HashSet<>();
+    private Set<UserFollow> following = new HashSet<>();
 
     /**
-     *     所有关注我的列表
-     *     对应的数字库字段是 tb_user_follow
-     *     定义为懒加载，默认加载User信息的时候不查询这个集合
+     * 所有关注我的列表
+     * 对应的数字库字段是 tb_user_follow
+     * 定义为懒加载，默认加载User信息的时候不查询这个集合
      */
     @JoinColumn(name = "targetId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<UserFollow> followser = new HashSet<>();
+    private Set<UserFollow> followsers = new HashSet<>();
 
     /**
      * 所有创建的群
@@ -128,7 +128,7 @@ public class User implements Principal {
      * 只有当遍历集合的时候才加载具体的数据
      * 对应的字段为：Group.ownerID
      */
-    @JoinColumn(name = "groupId")
+    @JoinColumn(name = "ownerId")
     @LazyCollection(LazyCollectionOption.EXTRA)
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Group> groups = new HashSet<>();
@@ -213,20 +213,20 @@ public class User implements Principal {
         this.lastReceivedAt = lastReceivedAt;
     }
 
-    public Set<UserFollow> getFollowsing() {
-        return followsing;
+    public Set<UserFollow> getFollowing() {
+        return following;
     }
 
-    public void setFollowsing(Set<UserFollow> followsing) {
-        this.followsing = followsing;
+    public void setFollowing(Set<UserFollow> followsing) {
+        this.following = followsing;
     }
 
-    public Set<UserFollow> getFollowser() {
-        return followser;
+    public Set<UserFollow> getFollowsers() {
+        return followsers;
     }
 
-    public void setFollowser(Set<UserFollow> followser) {
-        this.followser = followser;
+    public void setFollowsers(Set<UserFollow> followser) {
+        this.followsers = followser;
     }
 
     public Set<Group> getGroups() {

@@ -85,4 +85,5 @@ public class UpdateInfoModel {
                 model.sex != 0);
     }
 
+
 }

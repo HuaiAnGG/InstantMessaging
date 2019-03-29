@@ -24,27 +24,19 @@ public class UserCard {
     @Expose
     private int sex = 0;
 
-    /**
-     * 用户关注人的数量
-     */
+    // 用户关注人的数量
     @Expose
     private int follows;
 
-    /**
-     * 用户粉丝的数量
-     */
+    // 用户粉丝的数量
     @Expose
     private int following;
 
-    /**
-     * 我与当前User的关系状态，是否已经关注了这个人
-     */
+    // 我与当前User的关系状态，是否已经关注了这个人
     @Expose
     private boolean isFollow;
 
-    /**
-     * 用户信息更新时间
-     */
+    // 用户信息最后的更新时间
     @Expose
     private LocalDateTime modifyAt;
 
@@ -68,6 +60,7 @@ public class UserCard {
         // 懒加载会报错，因为没有Session
 
     }
+
 
     public String getId() {
         return id;

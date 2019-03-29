@@ -60,6 +60,7 @@ public class UserFollow {
     private String targetId;
 
     // 别名,也是target的昵称
+    @Column
     private String alias;
 
     /**
@@ -79,7 +80,8 @@ public class UserFollow {
     /**
      * 消息送达的时间
      */
-    @Column
+    @UpdateTimestamp
+    @Column(nullable = false)
     private LocalDateTime receiveAt = LocalDateTime.now();
 
 

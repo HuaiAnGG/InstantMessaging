@@ -84,6 +84,10 @@ public class ResponseModel<M> implements Serializable {
         return code;
     }
 
+    public boolean isSucceed() {
+        return code == SUCCEED;
+    }
+
     public void setCode(int code) {
         this.code = code;
     }
@@ -167,4 +171,5 @@ public class ResponseModel<M> implements Serializable {
     public static <M> ResponseModel<M> buildCreateError(int type) {
         return new ResponseModel<M>(type, "Create failed.");
     }
+
 }

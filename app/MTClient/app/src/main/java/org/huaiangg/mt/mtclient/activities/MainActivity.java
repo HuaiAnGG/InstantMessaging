@@ -181,6 +181,5 @@ public class MainActivity extends Activity
                 .setDuration(480)
                 .start();
 
-
     }
 }
