@@ -8,7 +8,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 import java.util.logging.Logger;
 
 /**
- * @Description:
+ * @Description: 全局通用唯一Application
  * @Auther: huaian
  * @Date: 2019/3/18 09:06
  */

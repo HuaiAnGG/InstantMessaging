@@ -5,10 +5,13 @@
 
 <hibernate-configuration>
     <session-factory>
+
         <!-- 数据库链接驱动 -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
         <!--链接地址用户名密码 -->
-        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/DB_I_T_PUSH_TEST?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/DB_I_T_PUSH_TEST?
+            serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
         <property name="connection.username">root</property>
         <property name="connection.password">123456</property>
 
@@ -23,19 +26,26 @@
 
         <!-- 配置C3P0缓存链接池  -->
         <property name="cache.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+
         <!--在连接池中可用数据库连接的最小数目-->
         <property name="c3p0.min_size">6</property>
+
         <!--在连接池中所有数据库连接的最大数目-->
         <property name="c3p0.max_size">50</property>
+
         <!--设定数据库连接的超时时间-->
         <!--<property name="c3p0.time_out">1800</property>-->
         <property name="c3p0.timeout">100</property>
+
         <!--可以被缓存的PreparedStatement的最大数目-->
         <property name="c3p0.max_statement">50</property>
+
         <!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
         <property name="c3p0.acquire_increment">1</property>
+
         <!-- 连接对象因该多长时间被自动校验的时间段，以秒为单位-->
         <property name="c3p0.idle_test_period">100</property> <!-- seconds -->
+
         <!--最多可以创建Statements对象的个数. . 就是可以执行SQL语句的对象的个数-->
         <property name="c3p0.max_statements">1</property>
 
@@ -59,17 +69,17 @@
                  class="net.huaiangg.web.mt.push.bean.db.UserFollow"/>
 
         <mapping package="net.huaiangg.web.mt.push.bean.db"
-        class="net.huaiangg.web.mt.push.bean.db.Group"/>
+                 class="net.huaiangg.web.mt.push.bean.db.Group"/>
         <mapping package="net.huaiangg.web.mt.push.bean.db"
-        class="net.huaiangg.web.mt.push.bean.db.GroupMember"/>
+                 class="net.huaiangg.web.mt.push.bean.db.GroupMember"/>
 
         <mapping package="net.huaiangg.web.mt.push.bean.db"
-        class="net.huaiangg.web.mt.push.bean.db.Message"/>
+                 class="net.huaiangg.web.mt.push.bean.db.Message"/>
 
         <mapping package="net.huaiangg.web.mt.push.bean.db"
-        class="net.huaiangg.web.mt.push.bean.db.PushHistory"/>
+                 class="net.huaiangg.web.mt.push.bean.db.PushHistory"/>
         <mapping package="net.huaiangg.web.mt.push.bean.db"
-        class="net.huaiangg.web.mt.push.bean.db.Apply"/>
+                 class="net.huaiangg.web.mt.push.bean.db.Apply"/>
 
     </session-factory>
 </hibernate-configuration>
