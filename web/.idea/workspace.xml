@@ -6,60 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/androidTest/java/org/huaiangg/mt/mtclient/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/androidTest/java/org/huaiangg/mt/mtclient/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/LaunchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/LaunchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/AccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/AccountActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/account/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/account/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/account/RegisterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/account/RegisterFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/assist/PermissionsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/assist/PermissionsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ActiveFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ActiveFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ContactFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ContactFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/GroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/GroupFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/media/GalleryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/media/GalleryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/user/UpdateInfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/user/UpdateInfoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/test/java/org/huaiangg/mt/mtclient/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/test/java/org/huaiangg/mt/mtclient/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Fragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/GalleryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/GalleryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/PortraitView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/PortraitView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/SquareLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/SquareLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/recyclerview/RecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/recyclerview/RecyclerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/data/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/data/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/presenter/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/presenter/BaseContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/utils/StreamUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/utils/StreamUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/values/ids.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/values/ids.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/AccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/AccountHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/UserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/api/RspModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/api/RspModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/card/UserCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/card/UserCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/RemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/persistence/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/persistence/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/LoginContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/LoginContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/LoginPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/RegisterPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/account/RegisterPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/user/UpdateInfoPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/user/UpdateInfoPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-label.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-label.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-title.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-title.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -90,6 +37,17 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DB_I_T_PUSH_TEST" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DB_I_T_PUSH_TEST" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_i_t_push_test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="MySQL - MTIM@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
@@ -109,11 +67,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
               <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user_follow">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -195,7 +162,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1939" />
@@ -491,7 +458,7 @@
       <workItem from="1554047250113" duration="640000" />
       <workItem from="1554081527748" duration="597000" />
       <workItem from="1554095395484" duration="1430000" />
-      <workItem from="1554126964046" duration="781000" />
+      <workItem from="1554126964046" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="完成数据库的的建立">
       <created>1553328905749</created>
@@ -504,7 +471,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122624000" />
+    <option name="totallyTimeSpent" value="123207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,9 +483,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.17761394" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.17761394" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.19829424" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -552,7 +520,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.13203754" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.13203754" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -623,78 +591,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/ContainerRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="475" selection-start-line="475" selection-end-line="475" />
-          <folding>
-            <element signature="e#18322#18323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/RegisterModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/internal/process/SecurityContextInjectee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1148" selection-start-line="1148" selection-end-line="1148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.1.Final/f44fbc177756f839a87785a0575ef0a466b50e8a/hibernate-core-5.4.1.Final-sources.jar!/org/hibernate/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="407" column="21" selection-start-line="407" selection-start-column="17" selection-end-line="407" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.1.Final/f44fbc177756f839a87785a0575ef0a466b50e8a/hibernate-core-5.4.1.Final-sources.jar!/org/hibernate/internal/SessionFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6318">
-          <caret line="480" selection-start-line="480" selection-end-line="480" />
-          <folding>
-            <element signature="e#20855#20856#0" expanded="true" />
-            <element signature="e#20899#20900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/user/UpdateInfoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/card/UserCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
@@ -1028,6 +924,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3cd684a5-4ade-44e2-b726-c68371e15553/schema/db_i_t_push_test/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
