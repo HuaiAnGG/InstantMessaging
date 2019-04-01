@@ -21,8 +21,7 @@ import org.huaiangg.mt.mtclient.R;
  * @create: 2019-03-24 17:08
  */
 public class GalleryFragment extends BottomSheetDialogFragment
-        implements GalleryView.SelectedChangeListener{
-
+        implements GalleryView.SelectedChangeListener {
     private GalleryView mGallery;
     private OnSelectedListener mListener;
 

@@ -22,7 +22,6 @@ import org.huaiangg.mt.factory.presenter.BasePresenter;
  */
 public class UpdateInfoPresenter extends BasePresenter<UpdateInfoContract.View>
         implements UpdateInfoContract.Presenter, DataSource.Callback<UserCard> {
-
     public UpdateInfoPresenter(UpdateInfoContract.View view) {
         super(view);
     }

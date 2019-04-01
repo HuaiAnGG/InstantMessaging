@@ -236,4 +236,5 @@ public class PermissionsFragment extends BottomSheetDialogFragment
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         // 传递对应的参数，并且告知接收权限的处理者是我自己
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-    }}
+    }
+}

@@ -2,6 +2,9 @@ package org.huaiangg.mt.factory.presenter.account;
 
 import android.text.TextUtils;
 
+import net.qiujuer.genius.kit.handler.Run;
+import net.qiujuer.genius.kit.handler.runable.Action;
+
 import org.huaiangg.mt.factory.R;
 import org.huaiangg.mt.factory.data.DataSource;
 import org.huaiangg.mt.factory.data.helper.AccountHelper;
@@ -9,9 +12,6 @@ import org.huaiangg.mt.factory.model.api.account.LoginModel;
 import org.huaiangg.mt.factory.model.db.User;
 import org.huaiangg.mt.factory.persistence.Account;
 import org.huaiangg.mt.factory.presenter.BasePresenter;
-
-import net.qiujuer.genius.kit.handler.Run;
-import net.qiujuer.genius.kit.handler.runable.Action;
 /**
  * @description: 登录的逻辑实现
  * @author: HuaiAngg
@@ -19,7 +19,6 @@ import net.qiujuer.genius.kit.handler.runable.Action;
  */
 public class LoginPresenter extends BasePresenter<LoginContract.View>
         implements LoginContract.Presenter, DataSource.Callback<User> {
-
     public LoginPresenter(LoginContract.View view) {
         super(view);
     }

@@ -18,4 +18,5 @@ public interface LoginContract {
         // 发起一个登录
         void login(String phone, String password);
     }
+
 }

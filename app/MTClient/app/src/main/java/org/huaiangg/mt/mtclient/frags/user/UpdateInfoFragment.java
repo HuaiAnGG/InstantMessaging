@@ -56,11 +56,10 @@ public class UpdateInfoFragment extends PresenterFragment<UpdateInfoContract.Pre
     private boolean isMan = true;
 
     public UpdateInfoFragment() {
-        // Required empty public constructor
     }
 
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.fragment_update_info;
     }
 

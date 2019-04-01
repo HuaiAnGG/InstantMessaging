@@ -14,8 +14,8 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.ViewTarget;
 
 import net.qiujuer.genius.ui.compat.UiCompat;
-import org.huaiangg.mt.common.app.Activity;
 
+import org.huaiangg.mt.common.app.Activity;
 import org.huaiangg.mt.mtclient.R;
 import org.huaiangg.mt.mtclient.frags.user.UpdateInfoFragment;
 
@@ -41,7 +41,7 @@ public class UserActivity extends Activity {
 
 
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.activity_user;
     }
 

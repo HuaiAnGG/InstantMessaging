@@ -116,4 +116,5 @@ public class Application extends android.app.Application {
     public static void showToast(@StringRes int msgId) {
         showToast(instance.getString(msgId));
     }
+
 }

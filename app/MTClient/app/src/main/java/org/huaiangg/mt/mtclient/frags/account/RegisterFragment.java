@@ -15,8 +15,6 @@ import org.huaiangg.mt.mtclient.activities.MainActivity;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-import static java.security.AccessController.getContext;
-
 /**
  * @description: 注册的界面
  * @author: HuaiAngg
@@ -58,7 +56,7 @@ public class RegisterFragment extends PresenterFragment<RegisterContract.Present
     }
 
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.fragment_register;
     }
 

@@ -7,7 +7,6 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.graphics.drawable.ColorDrawable;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.Property;
 import android.view.View;
 
@@ -30,8 +29,9 @@ public class LaunchActivity extends Activity {
     // Drawable
     private ColorDrawable mBgDrawable;
 
+
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.activity_launch;
     }
 
@@ -71,19 +71,15 @@ public class LaunchActivity extends Activity {
     private void waitPushReceiverId() {
         if (Account.isLogin()) {
             // 已经登录情况下，判断是否绑定
-            Log.d(TAG, "waitPushReceiverId: 已经登录情况下，判断是否绑定");
             // 如果没有绑定则等待广播接收器进行绑定
             if (Account.isBind()) {
-                Log.i(TAG, "waitPushReceiverId: 广播接收器绑定");
                 skip();
                 return;
             }
         } else {
             // 没有登录
-            Log.d(TAG, "waitPushReceiverId: 没有登录");
             // 如果拿到了PushId, 没有登录是不能绑定PushId的
             if (!TextUtils.isEmpty(Account.getPushId())) {
-                Log.d(TAG, "waitPushReceiverId: 拿到了PushId");
                 // 跳转
                 skip();
                 return;
@@ -95,7 +91,6 @@ public class LaunchActivity extends Activity {
                 .postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Log.d(TAG, "run: 循环等待中...");
                         waitPushReceiverId();
                     }
                 }, 500);

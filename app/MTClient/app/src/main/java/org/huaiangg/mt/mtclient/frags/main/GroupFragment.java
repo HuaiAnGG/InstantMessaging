@@ -4,7 +4,7 @@ import org.huaiangg.mt.common.app.Fragment;
 import org.huaiangg.mt.mtclient.R;
 
 /**
- * @description:
+ * @description: 群组界面
  * @author: HuaiAngg
  * @create: 2019-03-24 17:07
  */
@@ -15,8 +15,7 @@ public class GroupFragment extends Fragment {
     }
 
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.fragment_group;
     }
-
 }

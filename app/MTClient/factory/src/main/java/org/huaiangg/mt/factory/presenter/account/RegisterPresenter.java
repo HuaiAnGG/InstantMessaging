@@ -1,7 +1,6 @@
 package org.huaiangg.mt.factory.presenter.account;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 import net.qiujuer.genius.kit.handler.Run;
 import net.qiujuer.genius.kit.handler.runable.Action;
@@ -50,7 +49,6 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View>
             // 进行网络请求
             // 构造Model，进行请求调用
             RegisterModel model = new RegisterModel(phone, password, name, Account.getPushId());
-            Log.d("注册信息", "register: " + model.toString());
             // 进行网络请求，并设置回送接口为自己
             AccountHelper.register(model, this);
         }

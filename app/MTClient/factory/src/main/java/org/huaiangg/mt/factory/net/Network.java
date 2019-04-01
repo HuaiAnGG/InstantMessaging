@@ -81,4 +81,5 @@ public class Network {
     public static RemoteService remote() {
         return Network.getRetrofit().create(RemoteService.class);
     }
+
 }

@@ -1,5 +1,6 @@
 package org.huaiangg.mt.factory.model.card;
 
+import org.huaiangg.mt.factory.model.Author;
 import org.huaiangg.mt.factory.model.db.User;
 
 import java.util.Date;
@@ -9,7 +10,7 @@ import java.util.Date;
  * @author: HuaiAngg
  * @create: 2019-03-24 16:04
  */
-public class UserCard {
+public class UserCard implements Author {
     private String id;
     private String name;
     private String phone;
@@ -109,7 +110,7 @@ public class UserCard {
         this.modifyAt = modifyAt;
     }
 
-    // 缓存一个对应的User, 不能被GSON框架解析使用
+    // 缓存一个对应的User, 不能被GSON框架解析使用ø
     private transient User user;
 
     public User build() {

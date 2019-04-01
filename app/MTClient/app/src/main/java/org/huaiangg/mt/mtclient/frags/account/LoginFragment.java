@@ -53,7 +53,7 @@ public class LoginFragment extends PresenterFragment<LoginContract.Presenter>
     }
 
     @Override
-    protected int getContentLayoutID() {
+    protected int getContentLayoutId() {
         return R.layout.fragment_login;
     }
 

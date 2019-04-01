@@ -1,7 +1,6 @@
 package org.huaiangg.mt.factory;
 
 import android.support.annotation.StringRes;
-import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -23,7 +22,7 @@ import java.util.concurrent.Executors;
  * @create: 2019-03-24 15:43
  */
 public class Factory {
-    // 单例模式
+    // 单例模式ø
     private static final Factory instance;
     // 全局的线程池
     private final Executor executor;
@@ -103,7 +102,6 @@ public class Factory {
         // 进行Code区分
         switch (model.getCode()) {
             case RspModel.SUCCEED:
-                Log.i("网络请求码", "decodeRspCode: 网络返回的Code正确");
                 return;
             case RspModel.ERROR_SERVICE:
                 decodeRspCode(R.string.data_rsp_error_service, callback);

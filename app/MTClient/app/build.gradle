@@ -39,6 +39,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
     implementation "com.android.support:design:$rootProject.ext.supportVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
@@ -50,13 +51,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation project(':factory')
-    implementation project(':common')
-    implementation project(':lang')
     implementation "com.yalantis:ucrop:$rootProject.ext.ucropVersion"
     implementation "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
     // 个推
     implementation "com.getui:sdk:$rootProject.ext.getuiVersion"
     implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp3Version"
     implementation "com.squareup.okio:okio:$rootProject.ext.okioVersion"
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:$rootProject.ext.dbflowVersion"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:$rootProject.ext.dbflowVersion"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:$rootProject.ext.dbflowVersion"
+    implementation project(':common')
+    implementation project(path: ':factory')
 }

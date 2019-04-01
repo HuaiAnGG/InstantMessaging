@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:background="@drawable/bg_src_tianjin"
-    tools:context="org.huaiangg.mt.mtclient.frags.user.UpdateInfoFragment">
+    tools:background="@drawable/bg_src_qyqx"
+    tools:context=".frags.user.UpdateInfoFragment">
 
 
     <android.support.constraint.ConstraintLayout

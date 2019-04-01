@@ -17,6 +17,7 @@ import static android.support.constraint.Constraints.TAG;
  * @create: 2019-03-24 16:52
  */
 public class App extends Application {
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -70,7 +71,7 @@ public class App extends Application {
 
         @Override
         public void onActivityDestroyed(Activity activity) {
-
+            PushManager.getInstance().stopService(App.this);
         }
     }
 }

@@ -1,7 +1,6 @@
 package org.huaiangg.mt.factory.data.helper;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 import org.huaiangg.mt.factory.Factory;
 import org.huaiangg.mt.factory.R;
@@ -91,32 +90,28 @@ public class AccountHelper {
             // 请求成功返回
             // 从返回中得到我们的全局Model，内部是使用的Gson进行解析
             RspModel<AccountRspModel> rspModel = response.body();
-//            if( rspModel == null )
-//                return;
             if (rspModel.success()) {
                 // 拿到实体
                 AccountRspModel accountRspModel = rspModel.getResult();
                 // 获取我的信息
                 User user = accountRspModel.getUser();
-                user.save();
-
                 // 第一种，之间保存
-                // user.save();
-                /*
-                // 第二种通过ModelAdapter
-                FlowManager.getModelAdapter(User.class)
-                        .save(user);
+                user.save();
+                    /*
+                    // 第二种通过ModelAdapter
+                    FlowManager.getModelAdapter(User.class)
+                            .save(user);
 
-                // 第三种，事务中
-                DatabaseDefinition definition = FlowManager.getDatabase(AppDatabase.class);
-                definition.beginTransactionAsync(new ITransaction() {
-                    @Override
-                    public void execute(DatabaseWrapper databaseWrapper) {
-                        FlowManager.getModelAdapter(User.class)
-                                .save(user);
-                    }
-                }).build().execute();
-                */
+                    // 第三种，事务中
+                    DatabaseDefinition definition = FlowManager.getDatabase(AppDatabase.class);
+                    definition.beginTransactionAsync(new ITransaction() {
+                        @Override
+                        public void execute(DatabaseWrapper databaseWrapper) {
+                            FlowManager.getModelAdapter(User.class)
+                                    .save(user);
+                        }
+                    }).build().execute();
+                    */
                 // 同步到XML持久化中
                 Account.login(accountRspModel);
 
@@ -144,4 +139,5 @@ public class AccountHelper {
                 callback.onDataNotAvailable(R.string.data_network_error);
         }
     }
+
 }
