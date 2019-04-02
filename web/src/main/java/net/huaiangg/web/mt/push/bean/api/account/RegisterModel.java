@@ -18,6 +18,7 @@ public class RegisterModel {
     @Expose
     private String pushId;
 
+
     public String getAccount() {
         return account;
     }
@@ -50,11 +51,7 @@ public class RegisterModel {
         this.pushId = pushId;
     }
 
-    /**
-     * 校验
-     * @param model 参数
-     * @return 结果
-     */
+    // 校验
     public static boolean check(RegisterModel model) {
         return model != null
                 && !Strings.isNullOrEmpty(model.account)

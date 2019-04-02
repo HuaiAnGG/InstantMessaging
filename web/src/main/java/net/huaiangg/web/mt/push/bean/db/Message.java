@@ -15,86 +15,75 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_MESSAGE")
 public class Message {
+    public static final int TYPE_STR = 1; // 字符串类型
+    public static final int TYPE_PIC = 1; // 图片类型
+    public static final int TYPE_FILE = 3; // 文件类型
+    public static final int TYPE_AUDIO = 4; // 语音类型
 
-    // 字符串类型
-    public static final int TYPE_STR = 1;
-    // 图片类型
-    public static final int TYPE_PIC = 2;
-    // 文件类型
-    public static final int TYPE_FILE = 3;
-    // 语音类型
-    public static final int TYPE_AUDIO = 4;
-    /**
-     * 主键
-     * ID是由代码生成，由客户端生成
-     * 不允许更改，不允许为空
-     */
+    // 这是一个主键
     @Id
     @PrimaryKeyJoinColumn
+    // 主键生成存储的类型为UUID
+    // 这里不自动生成UUID，Id由代码写入，由客户端负责生成
+    // 避免复杂的服务器和客户端的映射关系
+    //@GeneratedValue(generator = "uuid")
+    // 把uuid的生成器定义为uuid2，uuid2是常规的UUID toString
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    // 不允许更改，不允许为null
     @Column(updatable = false, nullable = false)
     private String id;
 
-    /**
-     * 内容不允许为空，内容为空
-     */
+    // 内容不允许为空，类型为text
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
-    /**
-     *
-     */
+    // 附件
+    @Column
     private String attach;
 
-    /**
-     * 消息类型
-     */
+    // 消息类型
+    @Column(nullable = false)
     private int type;
 
-    /**
-     * 定义为创建时间戳，在创建时就已经写入
-     */
+
+    // 定义为创建时间戳，在创建时就已经写入
     @CreationTimestamp
     @Column(nullable = false)
     private LocalDateTime createAt = LocalDateTime.now();
 
-    /**
-     * 定义为更新时间戳，在创建时就已经写入
-     */
+    // 定义为更新时间戳，在创建时就已经写入
     @UpdateTimestamp
     @Column(nullable = false)
     private LocalDateTime updateAt = LocalDateTime.now();
 
-    /**
-     * 发送者 不为空
-     * 多个消息对应一个发送者
-     * 这个字段仅仅是为了对应sender数据库字段的senderId
-     * 不允许手动的更新或者插入
-     */
+
+    // 发送者 不为空
+    // 多个消息对应一个发送者
     @JoinColumn(name = "senderId")
     @ManyToOne(optional = false)
     private User sender;
+    // 这个字段仅仅只是为了对应sender的数据库字段senderId
+    // 不允许手动的更新或者插入
     @Column(nullable = false, updatable = false, insertable = false)
     private String senderId;
 
-    /**
-     * 接收者 可为空
-     * 多个消息对应一个接收者
-     */
-    @JoinColumn(name = "receiverId")
+
+    // 接收者 可为空
+    // 多个消息对应一个接收者
     @ManyToOne
+    @JoinColumn(name = "receiverId")
     private User receiver;
     @Column(updatable = false, insertable = false)
     private String receiverId;
 
-    /**
-     * 一个群可以接收多个消息
-     */
-    @JoinColumn(name = "groupId")
+
+    // 一个群可以接收多个消息
     @ManyToOne
+    @JoinColumn(name = "groupId")
     private Group group;
     @Column(updatable = false, insertable = false)
     private String groupId;
+
 
     public String getId() {
         return id;
@@ -128,54 +117,6 @@ public class Message {
         this.type = type;
     }
 
-    public User getSender() {
-        return sender;
-    }
-
-    public void setSender(User sender) {
-        this.sender = sender;
-    }
-
-    public String getSenderId() {
-        return senderId;
-    }
-
-    public void setSenderId(String senderID) {
-        this.senderId = senderID;
-    }
-
-    public User getReceiver() {
-        return receiver;
-    }
-
-    public void setReceiver(User receiver) {
-        this.receiver = receiver;
-    }
-
-    public String getReceiverId() {
-        return receiverId;
-    }
-
-    public void setReceiverId(String receiverID) {
-        this.receiverId = receiverID;
-    }
-
-    public Group getGroup() {
-        return group;
-    }
-
-    public void setGroup(Group group) {
-        this.group = group;
-    }
-
-    public String getGroupId() {
-        return groupId;
-    }
-
-    public void setGroupId(String groupID) {
-        this.groupId = groupID;
-    }
-
     public LocalDateTime getCreateAt() {
         return createAt;
     }
@@ -190,5 +131,53 @@ public class Message {
 
     public void setUpdateAt(LocalDateTime updateAt) {
         this.updateAt = updateAt;
+    }
+
+    public User getSender() {
+        return sender;
+    }
+
+    public void setSender(User sender) {
+        this.sender = sender;
+    }
+
+    public String getSenderId() {
+        return senderId;
+    }
+
+    public void setSenderId(String senderId) {
+        this.senderId = senderId;
+    }
+
+    public User getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(User receiver) {
+        this.receiver = receiver;
+    }
+
+    public String getReceiverId() {
+        return receiverId;
+    }
+
+    public void setReceiverId(String receiverId) {
+        this.receiverId = receiverId;
+    }
+
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
+    }
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
     }
 }

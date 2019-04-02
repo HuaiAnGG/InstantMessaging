@@ -53,7 +53,7 @@ public class PermissionsFragment extends BottomSheetDialogFragment
         root.findViewById(R.id.btn_submit)
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View v) {
+                    public void onClick(View view) {
                         // 点击时进行申请权限
                         requestPerm();
                     }

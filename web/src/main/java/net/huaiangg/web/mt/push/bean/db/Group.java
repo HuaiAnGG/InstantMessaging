@@ -15,65 +15,51 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_GROUP")
 public class Group {
-    /**
-     * 主键
-     * 主键生成存储类型为UUID,自动生成uuid
-     * 把UUID的生成器定义为uuid2，uuid2是常规的UUID toString
-     * 不允许更改，不允许为空
-     */
+
+    // 这是一个主键
     @Id
     @PrimaryKeyJoinColumn
+    // 主键生成存储的类型为UUID，自动生成UUID
     @GeneratedValue(generator = "uuid")
+    // 把uuid的生成器定义为uuid2，uuid2是常规的UUID toString
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    // 不允许更改，不允许为null
     @Column(updatable = false, nullable = false)
     private String id;
 
-    /**
-     * 群名称必须唯一
-     */
-    @Column(nullable = false, length = 128, unique = true)
+    // 群名称
+    @Column(nullable = false)
     private String name;
 
-    /**
-     * 群描述 不允许为空
-     */
+    // 群描述
     @Column(nullable = false)
     private String description;
 
-    /**
-     * 群头像
-     */
     @Column(nullable = false)
     private String picture;
 
-    /**
-     * 定义为创建时间戳，在创建时就已经写入
-     */
+
+    // 定义为创建时间戳，在创建时就已经写入
     @CreationTimestamp
     @Column(nullable = false)
     private LocalDateTime createAt = LocalDateTime.now();
 
-    /**
-     * 定义为更新时间戳，在创建时就已经写入
-     */
+    // 定义为更新时间戳，在创建时就已经写入
     @UpdateTimestamp
     @Column(nullable = false)
     private LocalDateTime updateAt = LocalDateTime.now();
 
-
-    /**
-     * 群的创建者
-     * optional：可以选为fasle 必须有一个创建者
-     * fetch：加载方式FetchType.EAGER， 急加载
-     * 意味着加载群信息的时候就必须加载owner的信息
-     * cascade：联想级别为ALL，所有得更改（更新，删除等）都将进行关系更新
-     */
-    @ManyToOne(optional = false, fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    // 群的创建者
+    // optional: 可选为false，必须有一个创建者
+    // fetch: 加载方式FetchType.EAGER，急加载，
+    // 意味着加载群的信息的时候就必须加载owner的信息
+    // cascade：联级级别为ALL，所有的更改（更新，删除等）都将进行关系更新
+    @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "ownerId")
     private User owner;
-
     @Column(nullable = false, updatable = false, insertable = false)
     private String ownerId;
+
 
     public String getId() {
         return id;
@@ -135,7 +121,7 @@ public class Group {
         return ownerId;
     }
 
-    public void setOwnerId(String ownerID) {
-        this.ownerId = ownerID;
+    public void setOwnerId(String ownerId) {
+        this.ownerId = ownerId;
     }
 }

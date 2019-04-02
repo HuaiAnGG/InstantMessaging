@@ -1,5 +1,6 @@
 package net.huaiangg.web.mt.push.bean.db;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -16,12 +17,6 @@ import java.time.LocalDateTime;
 @Table(name = "TB_USER_FOLLOW")
 public class UserFollow {
 
-    /**
-     * 主键
-     * 主键生成存储类型为UUID
-     * 把UUID的生成器定义为uuid2，uuid2是常规的UUID toString
-     * 不允许更改，不允许为空
-     */
     @Id
     @PrimaryKeyJoinColumn
     @GeneratedValue(generator = "uuid")
@@ -29,60 +24,49 @@ public class UserFollow {
     @Column(updatable = false, nullable = false)
     private String id;
 
-    /**
-     * 定义发起人 你关注某人 这里就是你
-     * 多对一：你可以很多人，每次关注就是一条记录
-     * 你可以创建多个关注的信息，所以是多对一
-     * 这里的多对一是 User 对应多个UserFollow
-     * optional 不可选，必须储存，一条记录一定要有一个“你”
-     */
+
+    // 定义一个发起人，你关注某人，这里就是你
+    // 多对1 -> 你可以关注很多人，你的每一次关注都是一条记录
+    // 你可以创建很多个关注的信息，所有是多对1；
+    // 这里的多对一是：User 对应 多个UserFollow
+    // optional 不可选，必须存储，一条关注记录一定要有一个"你"
     @ManyToOne(optional = false)
-    // 定义关联表的字段名originId，对应的是User.id
+    // 定义关联的表字段名为originId，对应的是User.id
+    // 定义的是数据库中的存储字段
     @JoinColumn(name = "originId")
     private User origin;
-
-    // 把这个列抽取出来存到model中，不允许为空，不允许更新，不允许插入
+    // 把这个列提取到我们的Model中，不允许为null，不允许更新，插入
     @Column(nullable = false, updatable = false, insertable = false)
     private String originId;
 
-    /**
-     * 定义关注的目标 你关注的人
-     * 多对一：你可以很多人，每次关注就是一条记录
-     * 你可以创建多个关注的信息，所以是多对一
-     * 这里的多对一是 User 对应多个UserFollow
-     * optional 不可选，必须储存，一条记录一定要有一个“你”
-     */
+
+    // 定义关注的目标，你关注的人
+    // 也是多对1，你可以被很多人关注，每次一关注都是一条记录
+    // 所有就是 多个UserFollow 对应 一个 User 的情况
     @ManyToOne(optional = false)
-    // 定义关联表的字段名origin，对应的是User.id
+    // 定义关联的表字段名为targetId，对应的是User.id
+    // 定义的是数据库中的存储字段
+    @JoinColumn(name = "targetId")
     private User target;
-    // 把这个列抽取出来存到model中，不允许为空，不允许更新，不允许插入
+    // 把这个列提取到我们的Model中，不允许为null，不允许更新，插入
     @Column(nullable = false, updatable = false, insertable = false)
     private String targetId;
 
-    // 别名,也是target的昵称
+
+    // 别名，也就是对target的备注名, 可以为null
     @Column
     private String alias;
 
-    /**
-     * 创建时间戳，在创建的时候就已经写进去
-     */
-    @UpdateTimestamp
+
+    // 定义为创建时间戳，在创建时就已经写入
+    @CreationTimestamp
     @Column(nullable = false)
     private LocalDateTime createAt = LocalDateTime.now();
 
-    /**
-     * 定义为更新时间戳，在创建时就已经写入
-     */
+    // 定义为更新时间戳，在创建时就已经写入
     @UpdateTimestamp
     @Column(nullable = false)
     private LocalDateTime updateAt = LocalDateTime.now();
-
-    /**
-     * 消息送达的时间
-     */
-    @UpdateTimestamp
-    @Column(nullable = false)
-    private LocalDateTime receiveAt = LocalDateTime.now();
 
 
     public String getId() {
@@ -105,8 +89,8 @@ public class UserFollow {
         return originId;
     }
 
-    public void setOriginId(String originID) {
-        this.originId = originID;
+    public void setOriginId(String originId) {
+        this.originId = originId;
     }
 
     public User getTarget() {
@@ -121,8 +105,8 @@ public class UserFollow {
         return targetId;
     }
 
-    public void setTargetId(String targetID) {
-        this.targetId = targetID;
+    public void setTargetId(String targetId) {
+        this.targetId = targetId;
     }
 
     public String getAlias() {

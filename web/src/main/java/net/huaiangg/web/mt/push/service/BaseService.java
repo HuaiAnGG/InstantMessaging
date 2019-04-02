@@ -11,7 +11,6 @@ import javax.ws.rs.core.SecurityContext;
  * @Date: 2019/3/24 14:11
  */
 public class BaseService {
-
     // 添加一个上下文注解，该注解会给securityContext赋值
     // 具体的值为我们的拦截器中所返回的SecurityContext
     @Context

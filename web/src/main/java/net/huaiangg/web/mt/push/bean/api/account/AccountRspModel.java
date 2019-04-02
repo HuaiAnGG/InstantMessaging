@@ -10,7 +10,6 @@ import net.huaiangg.web.mt.push.bean.db.User;
  * @Date: 2019/3/24 13:57
  */
 public class AccountRspModel {
-
     // 用户基本信息
     @Expose
     private UserCard user;

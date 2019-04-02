@@ -106,4 +106,5 @@ public class GsonProvider<T> implements MessageBodyReader<T>, MessageBodyWriter<
             jsonWriter.close();
         }
     }
+
 }
