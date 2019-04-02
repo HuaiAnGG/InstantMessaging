@@ -25,7 +25,6 @@ import org.huaiangg.mt.mtclient.frags.assist.PermissionsFragment;
  * @create: 2019-03-24 16:53
  */
 public class LaunchActivity extends Activity {
-    private static final String TAG = LaunchActivity.class.getSimpleName();
     // Drawable
     private ColorDrawable mBgDrawable;
 
@@ -96,6 +95,12 @@ public class LaunchActivity extends Activity {
                 }, 500);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        waitPushReceiverId();
+    }
 
     /**
      * 在跳转之前需要把剩下的50%进行完成

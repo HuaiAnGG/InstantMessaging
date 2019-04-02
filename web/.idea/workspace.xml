@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/assist/PermissionsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/assist/PermissionsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/AccountRspModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/AccountRspModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/RegisterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/account/RegisterModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/user/UpdateInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/api/user/UpdateInfoModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/card/UserCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/card/UserCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/GroupMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/GroupMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/PushHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/PushHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/UserFollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/UserFollow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/GsonProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/GsonProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/LocalDateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/LocalDateTimeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/Hib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/Hib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -132,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/Application.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3cd684a5-4ade-44e2-b726-c68371e15553/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/PushHistory.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/UserFollow.java" />
@@ -156,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/bean/db/Apply.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
       </list>
     </option>
   </component>
@@ -166,11 +143,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2238" />
+    <option name="y" value="163" />
+    <option name="width" value="1199" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -628,7 +605,7 @@
       <workItem from="1554126964046" duration="1633000" />
       <workItem from="1554175480582" duration="6881000" />
       <workItem from="1554192355661" duration="2385000" />
-      <workItem from="1554201459550" duration="3388000" />
+      <workItem from="1554201459550" duration="6180000" />
     </task>
     <task id="LOCAL-00001" summary="完成数据库的的建立">
       <created>1553328905749</created>
@@ -641,7 +618,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136130000" />
+    <option name="totallyTimeSpent" value="138922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -654,9 +631,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="2238" y="163" width="1199" height="790" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.19722815" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.32484636" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.19509594" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -668,7 +645,7 @@
       <window_info id="Persistence" order="9" sideWeight="0.5040917" side_tool="true" weight="0.19722815" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24889868" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.5319383" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.37816456" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41079295" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -690,7 +667,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.13166311" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.2168569" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
