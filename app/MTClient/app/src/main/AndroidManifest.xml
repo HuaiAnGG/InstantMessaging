@@ -94,7 +94,13 @@
             android:label="@string/title_activity_persional" />
         <activity
             android:name=".activities.MessageActivity"
-            android:label="@string/title_activity_message"></activity>
+            android:label="@string/title_activity_message" />
+        <activity
+            android:name=".activities.GroupCreateActivity"
+            android:label="@string/title_activity_group_create" />
+        <activity
+            android:name=".activities.GroupMemberActivirty"
+            android:label="@string/title_activity_group_member_activirty"></activity>
     </application>
 
 </manifest>

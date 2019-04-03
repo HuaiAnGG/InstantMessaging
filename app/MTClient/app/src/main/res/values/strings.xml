@@ -7,4 +7,6 @@
     <string name="title_activity_user">UserActivity</string>
     <string name="title_activity_persional">PersionalActivity</string>
     <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_group_create">GroupCreateActivity</string>
+    <string name="title_activity_group_member_activirty">GroupMemberActivirty</string>
 </resources>
