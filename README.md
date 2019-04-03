@@ -33,4 +33,6 @@
 - [服务器配置](https://github.com/HuaiAnGG/InstantMessaging/blob/master/Doc/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 
 # 服务器相关接口
-- 
+
+#### 访问路径映射
+- 待完善。
