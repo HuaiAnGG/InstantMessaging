@@ -10,7 +10,6 @@ import net.huaiangg.web.mt.push.bean.db.User;
  * @Date: 2019/3/24 14:13
  */
 public class UpdateInfoModel {
-
     @Expose
     private String name;
     @Expose

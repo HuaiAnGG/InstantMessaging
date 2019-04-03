@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
  * @Date: 2019/3/24 14:09
  */
 public class ResponseModel<M> implements Serializable {
-
     // 成功
     public static final int SUCCEED = 1;
     // 未知错误
