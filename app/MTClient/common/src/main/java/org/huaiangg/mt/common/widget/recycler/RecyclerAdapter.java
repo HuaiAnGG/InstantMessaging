@@ -21,7 +21,6 @@ import butterknife.Unbinder;
  * @author: HuaiAngg
  * @create: 2019-03-18 23:37
  */
-
 public abstract class RecyclerAdapter<Data>
         extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder<Data>>
         implements View.OnClickListener, View.OnLongClickListener, AdapterCallback<Data> {
@@ -76,6 +75,10 @@ public abstract class RecyclerAdapter<Data>
     public ViewHolder<Data> onCreateViewHolder(ViewGroup parent, int viewType) {
         // 得到LayoutInflater用于把XML初始化为View
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        /**
+         * 出现异常：
+         * Error inflating class norg.huaiangg.mt.common.widget.PortraitView
+         */
         // 把XML id为viewType的文件初始化为一个root View
         View root = inflater.inflate(viewType, parent, false);
         // 通过子类必须实现的方法，得到一个ViewHolder
