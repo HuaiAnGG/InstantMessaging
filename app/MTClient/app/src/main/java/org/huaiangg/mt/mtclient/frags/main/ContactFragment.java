@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide;
 import org.huaiangg.mt.common.app.PresenterFragment;
 import org.huaiangg.mt.common.widget.EmptyView;
 import org.huaiangg.mt.common.widget.PortraitView;
-import org.huaiangg.mt.common.widget.recyclerview.RecyclerAdapter;
+import org.huaiangg.mt.common.widget.recycler.RecyclerAdapter;
 import org.huaiangg.mt.factory.model.db.User;
 import org.huaiangg.mt.factory.presenter.contact.ContactContract;
 import org.huaiangg.mt.factory.presenter.contact.ContactPresenter;

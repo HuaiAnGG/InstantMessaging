@@ -2,7 +2,7 @@ package org.huaiangg.mt.factory.presenter;
 
 import android.support.annotation.StringRes;
 
-import org.huaiangg.mt.common.widget.recyclerview.RecyclerAdapter;
+import org.huaiangg.mt.common.widget.recycler.RecyclerAdapter;
 
 /**
  * @description: MVP模式中公共的基本契约

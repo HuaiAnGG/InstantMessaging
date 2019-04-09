@@ -3,7 +3,6 @@ package org.huaiangg.mt.mtclient.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -12,7 +11,14 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.huaiangg.mt.common.app.PresenterToolbarActivity;
+import org.huaiangg.mt.common.widget.PortraitView;
+import org.huaiangg.mt.common.widget.recycler.RecyclerAdapter;
+import org.huaiangg.mt.factory.model.db.view.MemberUserModel;
+import org.huaiangg.mt.factory.presenter.group.GroupMembersContract;
+import org.huaiangg.mt.factory.presenter.group.GroupMembersPresenter;
 import org.huaiangg.mt.mtclient.R;
+import org.huaiangg.mt.mtclient.frags.group.GroupMemberAddFragment;
 
 import butterknife.BindView;
 import butterknife.OnClick;

@@ -21,8 +21,9 @@ import com.yalantis.ucrop.UCrop;
 import org.huaiangg.mt.common.app.Application;
 import org.huaiangg.mt.common.app.PresenterToolbarActivity;
 import org.huaiangg.mt.common.widget.PortraitView;
-import org.huaiangg.mt.common.widget.recyclerview.RecyclerAdapter;
+import org.huaiangg.mt.common.widget.recycler.RecyclerAdapter;
 import org.huaiangg.mt.factory.presenter.group.GroupCreateContract;
+import org.huaiangg.mt.factory.presenter.group.GroupCreatePresenter;
 import org.huaiangg.mt.mtclient.R;
 import org.huaiangg.mt.mtclient.frags.media.GalleryFragment;
 

@@ -7,8 +7,6 @@ import android.util.Log;
 
 import com.igexin.sdk.GTServiceManager;
 
-import static android.support.constraint.Constraints.TAG;
-
 /**
  * @description: 个推推送SDK新版本Service支持
  *              该Service用以与个推服务器通讯，维持长链接；所以需要独立进程
@@ -18,6 +16,9 @@ import static android.support.constraint.Constraints.TAG;
  * @create: 2019-03-25 10:21
  */
 public class AppPushService extends Service {
+
+    private static final String TAG = AppPushService.class.getSimpleName();
+
     public AppPushService() {
     }
 

@@ -1,6 +1,7 @@
 package org.huaiangg.mt.mtclient.frags.search;
 
 
+import android.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,7 +18,7 @@ import net.qiujuer.genius.ui.drawable.LoadingDrawable;
 import org.huaiangg.mt.common.app.PresenterFragment;
 import org.huaiangg.mt.common.widget.EmptyView;
 import org.huaiangg.mt.common.widget.PortraitView;
-import org.huaiangg.mt.common.widget.recyclerview.RecyclerAdapter;
+import org.huaiangg.mt.common.widget.recycler.RecyclerAdapter;
 import org.huaiangg.mt.factory.model.card.UserCard;
 import org.huaiangg.mt.factory.presenter.contact.FollowContract;
 import org.huaiangg.mt.factory.presenter.contact.FollowPresenter;
@@ -33,7 +34,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 搜索人的界面实现
+ * A simple {@link Fragment} subclass.
  */
 public class SearchUserFragment extends PresenterFragment<SearchContract.Presenter>
         implements SearchActivity.SearchFragment, SearchContract.UserView {

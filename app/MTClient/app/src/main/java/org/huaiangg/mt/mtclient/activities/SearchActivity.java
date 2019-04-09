@@ -17,25 +17,26 @@ import org.huaiangg.mt.mtclient.frags.search.SearchGroupFragment;
 import org.huaiangg.mt.mtclient.frags.search.SearchUserFragment;
 
 public class SearchActivity extends ToolbarActivity {
-
     private static final String EXTRA_TYPE = "EXTRA_TYPE";
-    public static final int TYPE_USER = 1;
-    public static final int TYPE_GROUP = 2;
+    public static final int TYPE_USER = 1; // 搜索人
+    public static final int TYPE_GROUP = 2; // 搜索群
 
-    // 具体显示的类型
+    // 具体需要显示的类型
     private int type;
     private SearchFragment mSearchFragment;
 
     /**
      * 显示搜索界面
+     *
      * @param context 上下文
-     * @param type  显示的类型，用户还是群聊
+     * @param type    显示的类型，用户还是群
      */
-    public static void show(Context context, int type){
+    public static void show(Context context, int type) {
         Intent intent = new Intent(context, SearchActivity.class);
         intent.putExtra(EXTRA_TYPE, type);
         context.startActivity(intent);
     }
+
 
     @Override
     protected boolean initArgs(Bundle bundle) {
@@ -56,28 +57,21 @@ public class SearchActivity extends ToolbarActivity {
         // 显示对应的Fragment
         Fragment fragment;
         if (type == TYPE_USER) {
-            // 搜索联系人
             SearchUserFragment searchUserFragment = new SearchUserFragment();
             fragment = searchUserFragment;
             mSearchFragment = searchUserFragment;
         } else {
-            // 搜索群组
             SearchGroupFragment searchGroupFragment = new SearchGroupFragment();
             fragment = searchGroupFragment;
             mSearchFragment = searchGroupFragment;
         }
 
-        // fragment显示
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.lay_container, fragment)
                 .commit();
+
     }
 
-    /**
-     * 初始化Toolbar
-     * @param menu
-     * @return
-     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // 初始化菜单
@@ -103,7 +97,7 @@ public class SearchActivity extends ToolbarActivity {
 
                 @Override
                 public boolean onQueryTextChange(String s) {
-                    // 当文字改变的时候，这里不会及时搜索，只在为null的情况下进行搜索
+                    // 当文字改变的时候，咱们不会及时搜索，只在为null的情况下进行搜索
                     if (TextUtils.isEmpty(s)) {
                         search("");
                         return true;
@@ -135,5 +129,4 @@ public class SearchActivity extends ToolbarActivity {
     public interface SearchFragment {
         void search(String content);
     }
-
 }
