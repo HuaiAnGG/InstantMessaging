@@ -35,7 +35,8 @@ import static android.app.Activity.RESULT_OK;
  * @create: 2019-03-24 17:09
  */
 public class UpdateInfoFragment extends PresenterFragment<UpdateInfoContract.Presenter>
-        implements UpdateInfoContract.View{
+        implements UpdateInfoContract.View {
+
     @BindView(R.id.im_sex)
     ImageView mSex;
 
@@ -56,6 +57,7 @@ public class UpdateInfoFragment extends PresenterFragment<UpdateInfoContract.Pre
     private boolean isMan = true;
 
     public UpdateInfoFragment() {
+        // Required empty public constructor
     }
 
     @Override
@@ -119,7 +121,7 @@ public class UpdateInfoFragment extends PresenterFragment<UpdateInfoContract.Pre
 
         Glide.with(this)
                 .load(uri)
-//                .asBitmap()   // 发生未知错误
+                .asBitmap()
                 .centerCrop()
                 .into(mPortrait);
     }
@@ -148,16 +150,14 @@ public class UpdateInfoFragment extends PresenterFragment<UpdateInfoContract.Pre
         super.showError(str);
         // 当需要显示错误的时候触发，一定是结束了
 
-        new Thread(() -> {
-            // 停止Loading
-            mLoading.stop();
-            // 让控件可以输入
-            mDesc.setEnabled(true);
-            mPortrait.setEnabled(true);
-            mSex.setEnabled(true);
-            // 提交按钮可以继续点击
-            mSubmit.setEnabled(true);
-        });
+        // 停止Loading
+        mLoading.stop();
+        // 让控件可以输入
+        mDesc.setEnabled(true);
+        mPortrait.setEnabled(true);
+        mSex.setEnabled(true);
+        // 提交按钮可以继续点击
+        mSubmit.setEnabled(true);
     }
 
     @Override

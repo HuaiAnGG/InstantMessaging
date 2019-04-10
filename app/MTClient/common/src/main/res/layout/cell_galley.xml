@@ -34,6 +34,6 @@
         android:enabled="false"
         android:padding="0dp"
         android:visibility="gone"
-        android:buttonTint="@color/cb_gallery"
+        app:buttonTint="@color/cb_gallery"
         tools:visibility="visible" />
 </org.huaiangg.mt.common.widget.SquareLayout>

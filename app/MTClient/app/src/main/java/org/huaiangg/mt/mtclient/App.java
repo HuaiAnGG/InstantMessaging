@@ -1,6 +1,7 @@
 package org.huaiangg.mt.mtclient;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -25,6 +26,12 @@ public class App extends Application {
 
         // 注册生命周期
         registerActivityLifecycleCallbacks(new PushInitializeLifecycle());
+    }
+
+    @Override
+    protected void showAccountView(Context context) {
+        // 登录界面的显示
+
     }
 
     /**
@@ -69,7 +76,7 @@ public class App extends Application {
 
         @Override
         public void onActivityDestroyed(Activity activity) {
-            PushManager.getInstance().stopService(App.this);
+
         }
     }
 }

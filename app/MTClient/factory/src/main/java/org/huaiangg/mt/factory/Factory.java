@@ -32,7 +32,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
- * @description:
+ * @description:  工厂模式
  * @author: HuaiAngg
  * @create: 2019-03-24 15:43
  */

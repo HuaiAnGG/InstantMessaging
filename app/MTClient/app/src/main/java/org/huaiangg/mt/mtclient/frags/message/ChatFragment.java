@@ -542,4 +542,3 @@ public abstract class ChatFragment<InitModel>
 
 
 }
-

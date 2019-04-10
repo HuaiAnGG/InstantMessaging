@@ -23,3 +23,4 @@ public class GroupMemberAddModel {
         this.users = users;
     }
 }
+

@@ -7,64 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/AppPushService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/AppPushService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupCreateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupCreateActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupMemberActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupMemberActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/MessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/MessageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ActiveFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ActiveFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ContactFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/ContactFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/GroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/main/GroupFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/media/GalleryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/media/GalleryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/search/SearchGroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/search/SearchGroupFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/search/SearchUserFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/frags/search/SearchUserFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_group_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_group_create.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_group_member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_group_member.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_message.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_contact_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_contact_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_group_create_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_group_create_contact.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_search_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/cell_search_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_active.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_active.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_contact.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_search_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_search_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_update_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_update_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterToolbarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/PresenterToolbarActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/ToolbarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/ToolbarActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/GalleryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/GalleryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/recyclerview/AdapterCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/widget/recyclerview/RecyclerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/data/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/data/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/presenter/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/factory/presenter/BaseContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/utils/HashUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/utils/HashUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/layout/cell_galley.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/layout/cell_galley.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/AccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/AccountHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/data/helper/UserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/card/GroupCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/card/GroupCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/AppDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/AppDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/model/db/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/RemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/contact/ContactPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/contact/ContactPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/search/SearchGroupPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/presenter/search/SearchGroupPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings-data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/MTClient/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -100,12 +42,6 @@
         <item name="mtim" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mtim" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mtim: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -125,77 +61,7 @@
     <favorites_list name="MTServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/BaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/GroupService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5472">
-              <caret line="326" column="7" selection-start-line="326" selection-start-column="7" selection-end-line="326" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/MessageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -283,7 +149,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="235" />
     <option name="y" value="-10" />
     <option name="width" value="1200" />
@@ -297,6 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -308,191 +176,6 @@
               <item name="MTServer" type="58d84e3e:PackageViewProjectNode" />
               <item name="MTServer.MTServer" type="eaaa3913:PackageViewModuleGroupNode" />
               <item name="MTServer.MTServer.main" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="push" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MTServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -759,7 +442,8 @@
       <workItem from="1554201459550" duration="6180000" />
       <workItem from="1554279657209" duration="5844000" />
       <workItem from="1554725314367" duration="1196000" />
-      <workItem from="1554812348337" duration="1212000" />
+      <workItem from="1554812348337" duration="1793000" />
+      <workItem from="1554865816987" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="完成数据库的的建立">
       <created>1553328905749</created>
@@ -772,7 +456,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147174000" />
+    <option name="totallyTimeSpent" value="151770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,9 +470,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.308311" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.31233245" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.19509594" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -801,7 +484,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.24889868" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4978678" visible="true" weight="0.35693642" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4978678" visible="true" weight="0.7254335" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.41079295" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -811,7 +494,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4978678" weight="0.32488987" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" type="SLIDING" weight="0.32929516" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" weight="0.33370045" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.32488987" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49946696" weight="0.4132948" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.49946696" weight="0.14207049" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="16" sideWeight="0.49946696" weight="0.32929516" />
@@ -895,29 +578,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://c15a355e-dbf2-4e13-886b-6440bae88802/schema/db_i_t_push_test/table/tb_user_follow" />
-    <entry file="das://c15a355e-dbf2-4e13-886b-6440bae88802/schema/db_i_t_push_test/table/tb_user" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/168a7871-3934-432d-b0f7-70dc3287e932/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.1.Final/f44fbc177756f839a87785a0575ef0a466b50e8a/hibernate-core-5.4.1.Final-sources.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -925,13 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user_follow">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1260,6 +913,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1300,17 +963,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_push_history">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_group_member">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_apply">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />

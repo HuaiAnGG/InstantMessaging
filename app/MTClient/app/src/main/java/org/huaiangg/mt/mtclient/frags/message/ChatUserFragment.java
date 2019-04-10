@@ -145,4 +145,3 @@ public class ChatUserFragment extends ChatFragment<User>
         mCollapsingLayout.setTitle(user.getName());
     }
 }
-

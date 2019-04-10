@@ -27,6 +27,8 @@ import org.huaiangg.mt.mtclient.frags.assist.PermissionsFragment;
 public class LaunchActivity extends Activity {
     // Drawable
     private ColorDrawable mBgDrawable;
+    // 是否已经得到PushId
+    private boolean mAlreadyGotPushReceiverId = false;
 
 
     @Override
@@ -55,13 +57,19 @@ public class LaunchActivity extends Activity {
         super.initData();
 
         // 动画进入到50%等待PushId获取到
-        startAnim(0.5f, new Runnable() {
-            @Override
-            public void run() {
-                // 检查等待状态
-                waitPushReceiverId();
-            }
-        });
+        // 检查等待状态
+        startAnim(0.5f, this::waitPushReceiverId);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // 判断是否已经得到推送Id，如果已经得到则进行跳转操作，
+        // 在操作中检测权限状态
+        if (mAlreadyGotPushReceiverId) {
+            reallySkip();
+        }
     }
 
     /**
@@ -72,7 +80,7 @@ public class LaunchActivity extends Activity {
             // 已经登录情况下，判断是否绑定
             // 如果没有绑定则等待广播接收器进行绑定
             if (Account.isBind()) {
-                skip();
+                waitPushReceiverIdDone();
                 return;
             }
         } else {
@@ -80,38 +88,24 @@ public class LaunchActivity extends Activity {
             // 如果拿到了PushId, 没有登录是不能绑定PushId的
             if (!TextUtils.isEmpty(Account.getPushId())) {
                 // 跳转
-                skip();
+                waitPushReceiverIdDone();
                 return;
             }
         }
 
         // 循环等待
         getWindow().getDecorView()
-                .postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        waitPushReceiverId();
-                    }
-                }, 500);
+                .postDelayed(this::waitPushReceiverId, 500);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        waitPushReceiverId();
-    }
 
     /**
      * 在跳转之前需要把剩下的50%进行完成
      */
-    private void skip() {
-        startAnim(1f, new Runnable() {
-            @Override
-            public void run() {
-                reallySkip();
-            }
-        });
+    private void waitPushReceiverIdDone() {
+        // 标志已经得到PushId
+        mAlreadyGotPushReceiverId = true;
+        startAnim(1f, this::reallySkip);
     }
 
     /**

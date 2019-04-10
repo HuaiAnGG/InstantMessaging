@@ -16,7 +16,6 @@ import org.huaiangg.mt.mtclient.frags.message.ChatGroupFragment;
 import org.huaiangg.mt.mtclient.frags.message.ChatUserFragment;
 
 public class MessageActivity extends Activity {
-
     // 接收者Id，可以是群，也可以是人的Id
     public static final String KEY_RECEIVER_ID = "KEY_RECEIVER_ID";
     // 是否是群
@@ -102,5 +101,4 @@ public class MessageActivity extends Activity {
                 .add(R.id.lay_container, fragment)
                 .commit();
     }
-
 }

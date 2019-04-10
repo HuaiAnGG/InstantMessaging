@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class Application extends android.app.Application {
     private static Application instance;
-    private List<android.app.Activity> activities = new ArrayList<>();
+    private List<Activity> activities = new ArrayList<>();
 
     @Override
     public void onCreate() {
@@ -31,37 +31,37 @@ public class Application extends android.app.Application {
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
-            public void onActivityCreated(android.app.Activity activity, Bundle savedInstanceState) {
+            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
                 activities.add(activity);
             }
 
             @Override
-            public void onActivityStarted(android.app.Activity activity) {
+            public void onActivityStarted(Activity activity) {
 
             }
 
             @Override
-            public void onActivityResumed(android.app.Activity activity) {
+            public void onActivityResumed(Activity activity) {
 
             }
 
             @Override
-            public void onActivityPaused(android.app.Activity activity) {
+            public void onActivityPaused(Activity activity) {
 
             }
 
             @Override
-            public void onActivityStopped(android.app.Activity activity) {
+            public void onActivityStopped(Activity activity) {
 
             }
 
             @Override
-            public void onActivitySaveInstanceState(android.app.Activity activity, Bundle outState) {
+            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
 
             }
 
             @Override
-            public void onActivityDestroyed(android.app.Activity activity) {
+            public void onActivityDestroyed(Activity activity) {
                 activities.remove(activity);
             }
         });

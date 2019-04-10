@@ -50,4 +50,3 @@ public class UserSampleModel implements Author {
         this.portrait = portrait;
     }
 }
-

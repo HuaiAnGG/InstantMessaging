@@ -2,7 +2,6 @@ package org.huaiangg.mt.mtclient.frags.media;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetDialog;
@@ -102,7 +101,7 @@ public class GalleryFragment extends BottomSheetDialogFragment
             super(context, theme);
         }
 
-        protected TransStatusBottomSheetDialog(@NonNull Context context, boolean cancelable, DialogInterface.OnCancelListener cancelListener) {
+        protected TransStatusBottomSheetDialog(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {
             super(context, cancelable, cancelListener);
         }
 

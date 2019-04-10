@@ -156,4 +156,3 @@ public class MsgCreateModel {
         return model;
     }
 }
-

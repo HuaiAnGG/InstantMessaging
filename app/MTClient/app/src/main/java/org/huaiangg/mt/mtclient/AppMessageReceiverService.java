@@ -18,7 +18,6 @@ import org.huaiangg.mt.factory.persistence.Account;
  * @create: 2019-03-25 10:21
  */
 public class AppMessageReceiverService extends GTIntentService {
-
     @Override
     public void onReceiveServicePid(Context context, int i) {
         // 返回消息接收进程id，当前APP中就是AppPushService进程id

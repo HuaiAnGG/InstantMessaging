@@ -3,9 +3,12 @@ package org.huaiangg.mt.mtclient.frags.assist;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetDialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,6 +45,14 @@ public class PermissionsFragment extends BottomSheetDialogFragment
         return new GalleryFragment.TransStatusBottomSheetDialog(getContext());
     }
 
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        super.onDismiss(dialog);
+        FragmentActivity activity = getActivity();
+        if (activity != null) {
+            haveAll(activity, activity.getSupportFragmentManager());
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -158,9 +169,17 @@ public class PermissionsFragment extends BottomSheetDialogFragment
 
     // 私有的show方法
     private static void show(FragmentManager manager) {
+        // 去重避免多次界面重复可见导致弹出框累积
+        String tag = PermissionsFragment.class.getName();
+        Fragment oldFragment = manager.findFragmentByTag(tag);
+        if (oldFragment != null) {
+            manager.beginTransaction()
+                    .remove(oldFragment)
+                    .commitNowAllowingStateLoss();
+        }
         // 调用BottomSheetDialogFragment以及准备好的显示方法
         new PermissionsFragment()
-                .show(manager, PermissionsFragment.class.getName());
+                .show(manager, tag);
     }
 
 

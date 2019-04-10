@@ -27,3 +27,4 @@ public class FaceAdapter extends RecyclerAdapter<Face.Bean> {
         return new FaceHolder(root);
     }
 }
+

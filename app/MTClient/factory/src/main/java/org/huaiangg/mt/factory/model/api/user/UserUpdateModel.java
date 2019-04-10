@@ -1,7 +1,7 @@
 package org.huaiangg.mt.factory.model.api.user;
 
 /**
- * @description:
+ * @description: 用户更新信息所使用的Model
  * @author: HuaiAngg
  * @create: 2019-03-24 16:07
  */

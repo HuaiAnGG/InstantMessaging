@@ -3,7 +3,6 @@ package org.huaiangg.mt.mtclient;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.util.Log;
 
 import com.igexin.sdk.GTServiceManager;
 
@@ -16,16 +15,12 @@ import com.igexin.sdk.GTServiceManager;
  * @create: 2019-03-25 10:21
  */
 public class AppPushService extends Service {
-
-    private static final String TAG = AppPushService.class.getSimpleName();
-
     public AppPushService() {
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i(TAG, "onCreate: 个推推送SDK新版本Service启动！");
         GTServiceManager.getInstance().onCreate(this);
     }
 

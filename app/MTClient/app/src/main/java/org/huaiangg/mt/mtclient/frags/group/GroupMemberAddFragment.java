@@ -1,7 +1,6 @@
 package org.huaiangg.mt.mtclient.frags.group;
 
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -18,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 
@@ -46,7 +44,7 @@ public class GroupMemberAddFragment extends BottomSheetDialogFragment
     RecyclerView mRecycler;
 
     @BindView(R.id.toolbar)
-    Toolbar mToolbar;
+    android.support.v7.widget.Toolbar mToolbar;
 
     private Adapter mAdapter;
     private GroupMemberAddContract.Presenter mPresenter;
@@ -108,10 +106,9 @@ public class GroupMemberAddFragment extends BottomSheetDialogFragment
         mRecycler.setAdapter(mAdapter = new Adapter());
     }
 
-    @SuppressLint("NewApi")
     private void initToolbar() {
         mToolbar.inflateMenu(R.menu.group_create);
-        mToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        mToolbar.setOnMenuItemClickListener(new android.support.v7.widget.Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 if (item.getItemId() == R.id.action_create) {

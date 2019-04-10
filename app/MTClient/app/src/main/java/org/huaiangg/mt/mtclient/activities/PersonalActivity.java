@@ -130,7 +130,6 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
         return userId;
     }
 
-//    @SuppressLint("StringFormatMatches")
     @Override
     public void onLoadDone(User user) {
         if (user == null)

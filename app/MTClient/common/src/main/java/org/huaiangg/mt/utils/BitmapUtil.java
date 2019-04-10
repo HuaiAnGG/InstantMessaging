@@ -18,7 +18,7 @@ import java.io.InputStream;
 import static org.huaiangg.mt.utils.StreamUtil.close;
 
 /**
- * @description:
+ * @description: Bitmap 工具类
  * @author: HuaiAngg
  * @create: 2019-04-09 10:56
  */

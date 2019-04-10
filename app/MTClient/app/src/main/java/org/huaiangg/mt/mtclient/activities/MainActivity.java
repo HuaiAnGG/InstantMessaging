@@ -36,7 +36,8 @@ import butterknife.OnClick;
 
 public class MainActivity extends Activity
         implements BottomNavigationView.OnNavigationItemSelectedListener,
-        NavHelper.OnTabChangedListener<Integer>{
+        NavHelper.OnTabChangedListener<Integer> {
+
     @BindView(R.id.appbar)
     View mLayAppbar;
 
@@ -68,10 +69,10 @@ public class MainActivity extends Activity
 
     @Override
     protected boolean initArgs(Bundle bundle) {
-        if(Account.isComplete()) {
+        if (Account.isComplete()) {
             // 判断用户信息是否完全，完全则走正常流程
             return super.initArgs(bundle);
-        }else{
+        } else {
             UserActivity.show(this);
             return false;
         }
@@ -98,7 +99,7 @@ public class MainActivity extends Activity
         mNavigation.setOnNavigationItemSelectedListener(this);
 
         Glide.with(this)
-                .load(R.drawable.bg_src_qyqx)
+                .load(R.drawable.bg_src_morning)
                 .centerCrop()
                 .into(new ViewTarget<View, GlideDrawable>(mLayAppbar) {
                     @Override
@@ -116,30 +117,32 @@ public class MainActivity extends Activity
         Menu menu = mNavigation.getMenu();
         // 触发首次选中Home
         menu.performIdentifierAction(R.id.action_home, 0);
+
+        // 初始化头像加载
+        mPortrait.setup(Glide.with(this), Account.getUser());
+    }
+
+    @OnClick(R.id.im_portrait)
+    void onPortraitClick() {
+        PersonalActivity.show(this, Account.getUserId());
     }
 
     @OnClick(R.id.im_search)
     void onSearchMenuClick() {
-        /**
-         * 在群的界面的时候，点击顶部的搜索就进入群搜索界面
-         * 其他都为人搜索的界面
-         */
+        // 在群的界面的时候，点击顶部的搜索就进入群搜索界面
+        // 其他都为人搜索的界面
         int type = Objects.equals(mNavHelper.getCurrentTab().extra, R.string.title_group) ?
                 SearchActivity.TYPE_GROUP : SearchActivity.TYPE_USER;
         SearchActivity.show(this, type);
     }
 
-    /**
-     * 浮动按钮事件点击
-     */
     @OnClick(R.id.btn_action)
     void onActionClick() {
-        /**
-         * 浮动按钮点击时，判断当前界面是群还是联系人界面
-         * 如果是群，则打开群创建的界面
-         */
+        // 浮动按钮点击时，判断当前界面是群还是联系人界面
+        // 如果是群，则打开群创建的界面
         if (Objects.equals(mNavHelper.getCurrentTab().extra, R.string.title_group)) {
-            // TODO 打开群创建界面
+            // 打开群创建界面
+            GroupCreateActivity.show(this);
         } else {
             // 如果是其他，都打开添加用户的界面
             SearchActivity.show(this, SearchActivity.TYPE_USER);
@@ -197,6 +200,7 @@ public class MainActivity extends Activity
                 .setInterpolator(new AnticipateOvershootInterpolator(1))
                 .setDuration(480)
                 .start();
+
 
     }
 }
