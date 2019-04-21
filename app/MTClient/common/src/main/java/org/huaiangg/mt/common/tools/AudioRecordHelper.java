@@ -117,7 +117,7 @@ public class AudioRecordHelper {
         }
         return null;
     }
-    
+
     /*
     private MediaRecorder createNewMediaRecorder() {
         MediaRecorder record = new MediaRecorder();
