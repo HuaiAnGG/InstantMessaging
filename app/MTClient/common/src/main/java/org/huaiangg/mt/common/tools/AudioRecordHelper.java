@@ -20,14 +20,13 @@ import java.io.IOException;
 
 /**
  * @description: 录制语音的工具类，该工具类可以实现录制语音的工作
- *               录制语音我们采取AudioRecord进行录制，录制的语音为高保真语音
- *               所以我们需要对这个语音进行一定的转码操作，在这里为了通用转码为mp3格式
- *
- *               而要把原始声音转码为mp3我们采用的是：Lame进行转码：Lame的官网：http://lame.sourceforge.net/
- *               Lame是一个比较老牌的转码工具，口碑非常不错。
- *               当然Lame本身是c语言的实现，并不是java；所以使用一个框架来辅助调用Lame进行转码操作
- *               Lame 的java封装基本上满足了我们的现有需求，可以实现一边录制一边进行转码操作
- *
+ * 录制语音我们采取AudioRecord进行录制，录制的语音为高保真语音
+ * 所以我们需要对这个语音进行一定的转码操作，在这里为了通用转码为mp3格式
+ * <p>
+ * 而要把原始声音转码为mp3我们采用的是：Lame进行转码：Lame的官网：http://lame.sourceforge.net/
+ * Lame是一个比较老牌的转码工具，口碑非常不错。
+ * 当然Lame本身是c语言的实现，并不是java；所以使用一个框架来辅助调用Lame进行转码操作
+ * Lame 的java封装基本上满足了我们的现有需求，可以实现一边录制一边进行转码操作
  * @author: HuaiAngg
  * @create: 2019-04-09 10:34
  */
@@ -191,10 +190,18 @@ public class AudioRecordHelper {
         final int shortBufferSize = minShortBufferSize;
         final RecordCallback callback = this.callback;
 
+        Lame lame;
         // 初始化Lame转码库相关参数，传入当前的输入采样率，通道，以及输出的mp3格式的采样率
-        Lame lame = new Lame(audioRecorder.getSampleRate(),
-                audioRecorder.getChannelCount(),
-                audioRecorder.getSampleRate());
+        try {
+            lame = new Lame(audioRecorder.getSampleRate(),
+                    audioRecorder.getChannelCount(),
+                    audioRecorder.getSampleRate());
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+            Application.showToast("Record-Lame 初始化失败!");
+            return null;
+        }
+
         // 构建一个输出流，定向到文件流上面
         LameOutputStream lameOutputStream = new LameOutputStream(lame, outputStream, shortBufferSize);
         // 构建一个异步的编码器，这样可以避免阻塞当前线程读取用户的录音

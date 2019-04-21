@@ -55,7 +55,7 @@ ext{
     okioVersion = '2.2.2'
 
     airpanelVersion = "1.1.0"
-    lameVersion = "1.0.0"
+    lameVersion = "1.2.0"
 
     leakCanaryVision = "1.6.3"
 }
