@@ -63,14 +63,11 @@ public class ChatUserFragment extends ChatFragment<User>
 
         Toolbar toolbar = mToolbar;
         toolbar.inflateMenu(R.menu.chat_user);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.action_person) {
-                    onPortraitClick();
-                }
-                return false;
+        toolbar.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.action_person) {
+                onPortraitClick();
             }
+            return false;
         });
 
         // 拿到菜单Icon
@@ -88,7 +85,7 @@ public class ChatUserFragment extends ChatFragment<User>
             return;
 
 
-        if (verticalOffset == 0) {
+        if (verticalOffset == 1) {
             // 完全展开
             view.setVisibility(View.VISIBLE);
             view.setScaleX(1);

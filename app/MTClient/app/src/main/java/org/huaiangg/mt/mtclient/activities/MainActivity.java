@@ -17,7 +17,6 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.ViewTarget;
 
-import net.qiujuer.genius.ui.Ui;
 import net.qiujuer.genius.ui.widget.FloatActionButton;
 
 import org.huaiangg.mt.common.app.Activity;
@@ -99,7 +98,7 @@ public class MainActivity extends Activity
         mNavigation.setOnNavigationItemSelectedListener(this);
 
         Glide.with(this)
-                .load(R.drawable.bg_src_morning)
+                .load(getResources().getColor(R.color.white))
                 .centerCrop()
                 .into(new ViewTarget<View, GlideDrawable>(mLayAppbar) {
                     @Override
@@ -138,7 +137,12 @@ public class MainActivity extends Activity
 
     @OnClick(R.id.btn_action)
     void onActionClick() {
-        // 浮动按钮点击时，判断当前界面是群还是联系人界面
+        // 浮动按钮点击时，判断当前界面是主页、群还是联系人界面
+        //TODO 主界面时回到登录界面
+//        if (Objects.equals(mNavHelper.getCurrentTab(), R.string.title_home)) {
+//            transY = Ui.dipToPx(getResources(), 76);
+//            startActivity(new Intent(MainActivity.this, AccountActivity.class));
+//        } else
         // 如果是群，则打开群创建的界面
         if (Objects.equals(mNavHelper.getCurrentTab().extra, R.string.title_group)) {
             // 打开群创建界面
@@ -178,15 +182,19 @@ public class MainActivity extends Activity
         float rotation = 0;
         if (Objects.equals(newTab.extra, R.string.title_home)) {
             // 主界面时隐藏
-            transY = Ui.dipToPx(getResources(), 76);
+//            transY = Ui.dipToPx(getResources(), 76);
+            mAction.setBackgroundColor(getResources().getColor(R.color.red_600));
+            mAction.setImageResource(R.drawable.ic_home_exit);
         } else {
             // transY 默认为0 则显示
             if (Objects.equals(newTab.extra, R.string.title_group)) {
                 // 群
+                mAction.setBackgroundColor(getResources().getColor(R.color.colorAccent));
                 mAction.setImageResource(R.drawable.ic_group_add);
                 rotation = -360;
             } else {
                 // 联系人
+                mAction.setBackgroundColor(getResources().getColor(R.color.colorAccent));
                 mAction.setImageResource(R.drawable.ic_contact_add);
                 rotation = 360;
             }

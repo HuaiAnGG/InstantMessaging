@@ -1,5 +1,6 @@
 package org.huaiangg.mt.mtclient.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -136,6 +137,7 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
         return userId;
     }
 
+    @SuppressLint("StringFormatMatches")
     @Override
     public void onLoadDone(User user) {
         if (user == null)

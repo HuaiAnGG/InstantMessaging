@@ -22,7 +22,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import net.qiujuer.genius.kit.handler.Run;
-import net.qiujuer.genius.kit.handler.runable.Action;
 import net.qiujuer.genius.ui.Ui;
 import net.qiujuer.genius.ui.compat.UiCompat;
 import net.qiujuer.genius.ui.widget.Loading;
@@ -109,7 +108,7 @@ public abstract class ChatFragment<InitModel>
         // 拿到占位布局
         // 替换顶部布局一定需要发生在super之前
         // 防止控件绑定异常
-        ViewStub stub = (ViewStub) root.findViewById(R.id.view_stub_header);
+        ViewStub stub = root.findViewById(R.id.view_stub_header);
         stub.setLayoutResource(getHeaderLayoutId());
         stub.inflate();
 
@@ -117,13 +116,10 @@ public abstract class ChatFragment<InitModel>
         super.initWidget(root);
 
         // 初始化面板操作
-        mPanelBoss = (AirPanel.Boss) root.findViewById(R.id.lay_content);
-        mPanelBoss.setup(new AirPanel.PanelListener() {
-            @Override
-            public void requestHideSoftKeyboard() {
-                // 请求隐藏软键盘
-                Util.hideKeyboard(mContent);
-            }
+        mPanelBoss = root.findViewById(R.id.lay_content);
+        mPanelBoss.setup(() -> {
+            // 请求隐藏软键盘
+            Util.hideKeyboard(mContent);
         });
         mPanelBoss.setOnStateChangedListener(new AirPanel.OnStateChangedListener() {
             @Override
@@ -192,12 +188,9 @@ public abstract class ChatFragment<InitModel>
         mAudioFileCache = new FileCache<>("audio/cache", "mp3", new FileCache.CacheListener<AudioHolder>() {
             @Override
             public void onDownloadSucceed(final AudioHolder holder, final File file) {
-                Run.onUiAsync(new Action() {
-                    @Override
-                    public void call() {
-                        // 主线程播放
-                        mAudioPlayer.trigger(holder, file.getAbsolutePath());
-                    }
+                Run.onUiAsync(() -> {
+                    // 主线程播放
+                    mAudioPlayer.trigger(holder, file.getAbsolutePath());
                 });
             }
 
