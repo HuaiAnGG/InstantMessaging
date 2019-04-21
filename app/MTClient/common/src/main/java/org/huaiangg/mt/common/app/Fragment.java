@@ -67,6 +67,17 @@ public abstract class Fragment extends android.support.v4.app.Fragment {
         initData();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        /**
+         * LeakCanary内存泄漏检测
+         */
+//        RefWatcher refWatcher = Application.getRefWatcher(getActivity());
+//        refWatcher.watch(this);
+    }
+
     /**
      * 初始化相关参数
      */

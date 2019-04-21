@@ -13,5 +13,5 @@
         android:contentDescription="@string/app_name"
         android:foreground="@color/black_alpha_16"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_src_qyqx" />
+        android:src="@drawable/ic_bg_chat" />
 </FrameLayout>

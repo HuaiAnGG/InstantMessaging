@@ -1,5 +1,6 @@
 package org.huaiangg.mt.common.widget;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -90,6 +91,7 @@ public class GalleryView extends RecyclerView {
      * @param image Image
      * @return True，代表我进行了数据更改，你需要刷新；反之不刷新
      */
+    @SuppressLint("StringFormatMatches")
     private boolean onItemSelectClick(Image image) {
         // 是否需要进行刷新
         boolean notifyRefresh;
@@ -297,12 +299,12 @@ public class GalleryView extends RecyclerView {
         private View mShade;
         private CheckBox mSelected;
 
-        public ViewHolder(View itemView) {
-            super(itemView);
+        public ViewHolder(View view) {
+            super(view);
 
-            mPic = (ImageView) itemView.findViewById(R.id.im_image);
-            mShade = itemView.findViewById(R.id.view_shade);
-            mSelected = (CheckBox) itemView.findViewById(R.id.cb_select);
+            mPic = view.findViewById(R.id.im_image);
+            mShade = view.findViewById(R.id.view_shade);
+            mSelected = view.findViewById(R.id.cb_select);
         }
 
         @Override

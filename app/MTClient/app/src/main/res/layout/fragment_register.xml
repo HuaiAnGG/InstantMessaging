@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:background="@drawable/bg_src_qyqx"
+    tools:background="@drawable/ic_bg_chat"
     tools:context=".frags.account.RegisterFragment">
 
     <android.support.v7.widget.Toolbar

@@ -117,6 +117,7 @@ public class AudioRecordHelper {
         }
         return null;
     }
+    
     /*
     private MediaRecorder createNewMediaRecorder() {
         MediaRecorder record = new MediaRecorder();
@@ -165,7 +166,6 @@ public class AudioRecordHelper {
      *
      * @return 录制完成后返回一个文件，文件就是缓存的文件
      */
-    @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
     public File record() {
         isCancel = false;
         isDone = false;
@@ -192,23 +192,16 @@ public class AudioRecordHelper {
         final RecordCallback callback = this.callback;
 
         // 初始化Lame转码库相关参数，传入当前的输入采样率，通道，以及输出的mp3格式的采样率
-        Lame lame;
-        try {
-            lame = new Lame(audioRecorder.getSampleRate(),
-                    audioRecorder.getChannelCount(),
-                    audioRecorder.getSampleRate());
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-            Application.showToast("Record-Lame init error!");
-            return null;
-        }
+        Lame lame = new Lame(audioRecorder.getSampleRate(),
+                audioRecorder.getChannelCount(),
+                audioRecorder.getSampleRate());
         // 构建一个输出流，定向到文件流上面
         LameOutputStream lameOutputStream = new LameOutputStream(lame, outputStream, shortBufferSize);
         // 构建一个异步的编码器，这样可以避免阻塞当前线程读取用户的录音
         LameAsyncEncoder lameAsyncEncoder = new LameAsyncEncoder(lameOutputStream, shortBufferSize);
 
         int readSize;
-        long endTime = 0;
+        long endTime;
 
         // 通知开始
         audioRecorder.startRecording();
@@ -217,8 +210,7 @@ public class AudioRecordHelper {
         final long startTime = SystemClock.uptimeMillis();
 
         // 在当前线程中循环的读取系统录制的用户音频
-        // 如果没有完成标示则继续录制
-        while (!isDone) {
+        while (true) {
             // 从异步Lame编码器中获取一个缓存的buffer，然后把用户的录音读取到里边
             final short[] buffer = lameAsyncEncoder.getFreeBuffer();
             // 开始进行读取
@@ -232,6 +224,11 @@ public class AudioRecordHelper {
             // 回调进度
             endTime = SystemClock.uptimeMillis();
             callback.onProgress(endTime - startTime);
+
+            // 如果没有完成标示则继续录制
+            if (isDone) {
+                break;
+            }
         }
 
         // 进行录制完成

@@ -52,6 +52,13 @@ dependencies {
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
 
+
+    // LeakCanary
+//    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.ext.leakCanaryVision"
+//    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakCanaryVision"
+//    // Optional, if you use support library fragments:
+//    debugImplementation "com.squareup.leakcanary:leakcanary-support-fragment:$rootProject.ext.leakCanaryVision"
+
     testImplementation 'junit:junit:4.12'
     implementation project(':face_res')
     implementation project(':lang')

@@ -39,7 +39,7 @@ ext{
     // 相关依赖库版本
     supportVersion = '28.0.0';
     butterknifeVersion = '9.0.0';
-    geniusVersion = '2.0.0'
+    geniusVersion = '2.0.1'
     glideVersion = '3.7.0'
     circleimageviewVersion = '3.0.0'
 
@@ -56,4 +56,6 @@ ext{
 
     airpanelVersion = "1.1.0"
     lameVersion = "1.0.0"
+
+    leakCanaryVision = "1.6.3"
 }

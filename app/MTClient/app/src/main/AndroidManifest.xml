@@ -22,7 +22,7 @@
         android:name=".App"
         android:allowBackup="true"
         android:fullBackupContent="@xml/provider_paths"
-        android:icon="@drawable/ic_mtim_logo_180px"
+        android:icon="@drawable/ic_logo_mtim_word"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"

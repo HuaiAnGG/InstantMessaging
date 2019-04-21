@@ -25,6 +25,13 @@ public abstract class Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /**
+         * LeakCanary 内存泄漏检测
+         */
+//        RefWatcher refWatcher = Application.getRefWatcher(this);
+//        refWatcher.watch(this);
+
         // 在界面未初始化之前调用的初始化窗口
         initWidows();
 
@@ -38,6 +45,7 @@ public abstract class Activity extends AppCompatActivity {
         } else {
             finish();
         }
+
     }
 
     /**

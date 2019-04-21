@@ -26,11 +26,17 @@ import org.huaiangg.mt.factory.presenter.contact.PersonalPresenter;
 import org.huaiangg.mt.mtclient.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 个人详细信息界面
+ */
 public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.Presenter>
         implements PersonalContract.View {
     private static final String BOUND_KEY_ID = "BOUND_KEY_ID";
+    @BindView(R.id.btn_allow_logout)
+    net.qiujuer.genius.ui.widget.Button btnAllowLogout;
     private String userId;
 
     @BindView(R.id.im_header)
@@ -156,5 +162,16 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
     @Override
     protected PersonalContract.Presenter initPresenter() {
         return new PersonalPresenter(this);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.btn_allow_logout)
+    public void onViewClicked() {
     }
 }

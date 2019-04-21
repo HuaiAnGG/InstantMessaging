@@ -22,12 +22,17 @@ import java.util.List;
 public class Application extends android.app.Application {
     private static Application instance;
     private List<Activity> activities = new ArrayList<>();
+//    private RefWatcher refWatcher;
 
     @Override
     public void onCreate() {
         super.onCreate();
         instance = this;
-
+        // LeakCanary 内存泄漏
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            return;
+//        }
+//        refWatcher = LeakCanary.install(this);
 
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
@@ -65,7 +70,18 @@ public class Application extends android.app.Application {
                 activities.remove(activity);
             }
         });
+
     }
+
+    /**
+     * 内存泄漏检测
+     * @param context
+     * @return
+     */
+//    public static RefWatcher getRefWatcher(Context context) {
+//        Application app = (Application) context.getApplicationContext();
+//        return app.refWatcher;
+//    }
 
     // 退出所有
     public void finishAll(){
