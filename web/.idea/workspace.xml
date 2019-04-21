@@ -7,7 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0255b9f2-9b80-4c3a-9542-69ee0d55940f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/AccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/AccountActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupCreateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/GroupCreateActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/PersonalActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/PersonalActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/java/org/huaiangg/mt/mtclient/activities/UserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/drawable-v24/ic_launch_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_launch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_message.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/activity_personal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_update_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/app/src/main/res/layout/fragment_update_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/app/Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/tools/AudioRecordHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/common/src/main/java/org/huaiangg/mt/common/tools/AudioRecordHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/factory/src/main/java/org/huaiangg/mt/factory/net/UploadHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/MTClient/lang/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,6 +65,19 @@
         <item name="mtim" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mtim" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mtim: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mtim" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mtim: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tb_apply: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -61,7 +97,107 @@
     <favorites_list name="MTServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/Hib.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/AuthRequestFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_message">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_push_history">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user_follow">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_apply">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_group">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/db/GroupMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/db/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/db/UserFollow.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/db/PushHistory.java" />
@@ -139,6 +274,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/PushFactory.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/PushDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -149,9 +285,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="235" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="455" />
+    <option name="y" value="85" />
     <option name="width" value="1200" />
     <option name="height" value="790" />
   </component>
@@ -443,7 +579,11 @@
       <workItem from="1554279657209" duration="5844000" />
       <workItem from="1554725314367" duration="1196000" />
       <workItem from="1554812348337" duration="1793000" />
-      <workItem from="1554865816987" duration="4015000" />
+      <workItem from="1554865816987" duration="9221000" />
+      <workItem from="1555325087511" duration="5580000" />
+      <workItem from="1555690708993" duration="1583000" />
+      <workItem from="1555739769384" duration="2438000" />
+      <workItem from="1555848320241" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="完成数据库的的建立">
       <created>1553328905749</created>
@@ -456,7 +596,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151770000" />
+    <option name="totallyTimeSpent" value="168930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,9 +609,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.31233245" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.16756032" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.19509594" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -484,7 +625,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32929516" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.24889868" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4978678" visible="true" weight="0.7254335" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4978678" weight="0.7066474" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.41079295" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -507,7 +648,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.16353887" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.16353887" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -578,9 +719,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -816,25 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2116#2146#1" expanded="true" />
-            <element signature="e#8043#8073#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/AuthRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/GsonProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -856,16 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/Hib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,16 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -963,7 +1062,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user_follow">
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_group_member">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/utils/Hib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/factory/UserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/huaiangg/web/mt/push/provider/AuthRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_message">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -977,21 +1127,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user_follow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_group_member">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://92924705-216b-4123-81b5-080ba5d1b357/schema/mtim/table/tb_message">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />

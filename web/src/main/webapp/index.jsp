@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  MTServer is starting!
+  马桶服务器已经启动！
   </body>
 </html>
